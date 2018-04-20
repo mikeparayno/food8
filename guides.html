@@ -20,9 +20,9 @@
     </article>
     </template>
     <script>
-        //NYHEDER
-        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/nyheder";
-        let nyheder = [];
+        //GUIDES
+        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/guides";
+        let guides = [];
         let display = document.querySelector("#display");
         let template = document.querySelector("template");
 
@@ -30,21 +30,21 @@
 
         async function hentJson() {
             let dataJson = await fetch(jSonUrl);
-            nyheder = await dataJson.json();
+            guides = await dataJson.json();
             //viser arrayet efter json er hentet ind
-            console.log(nyheder);
-            visNyheder();
+            console.log(guides);
+            visGuides();
         }
 
-        function visNyheder() {
-            nyheder.forEach(nyhed => {
-                console.log(nyhed);
+        function visGuides() {
+            guides.forEach(guide => {
+                console.log(guide);
                 let klon = template.cloneNode(true).content;
                 console.log(klon);
-                klon.querySelector("[data-header]").textContent = nyhed.title.rendered;
-                klon.querySelector("[data-image]").src = nyhed.acf.foto.url;
-                klon.querySelector("[data-image]").alt = "billede af" + nyhed.acf.foto.title;
-                klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+                klon.querySelector("[data-header]").textContent = guide.title.rendered;
+                klon.querySelector("[data-image]").src = guide.acf.foto.url;
+                klon.querySelector("[data-image]").alt = "billede af" + guide.acf.foto.title;
+                klon.querySelector("[data-description]").innerHTML = guide.content.rendered;
 
                 display.appendChild(klon);
             });
