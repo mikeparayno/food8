@@ -1,17 +1,33 @@
 /*------- MOBIL --------*/
 
-@media screen and (max-width:767px) {
-
-}
+@media screen and (max-width:767px) {}
 
 /*------- TABLET -------*/
 
-@media screen and (min-width:768px) and (max-width:1023px) {
-
-}
+@media screen and (min-width:768px) and (max-width:1023px) {}
 
 /*------- DESKTOP -------*/
 
 @media screen and (min-width:1024px) {
+
+    /* ----- FOOTER ----- */
+    /* INSTA */
+    .fa {
+        padding: 10px;
+        font-size: 50px;
+        width: 20px;
+        border-radius: 1000px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-instagram {
+        color: darkgray;
+        background-color: beige;
+    }
 
 }
