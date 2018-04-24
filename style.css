@@ -1,6 +1,54 @@
 /*------- MOBIL --------*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+
+    /* ----- FORSIDE ----- */
+    #kort_om {
+        height: 100vh;
+        width: 100vw;
+        background-color: antiquewhite;
+
+    }
+
+    #food8 {
+        height: 100%;
+        width: 100%;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 10px;
+    }
+
+    #foodaid {
+        height: 100%;
+        width: 100%;
+        background-color: azure;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 10px;
+    }
+
+    .food8_billede {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: red;
+    }
+
+    .food8_tekst {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: blue;
+    }
+
+
+
+}
 
 /*------- TABLET -------*/
 
