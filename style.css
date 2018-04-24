@@ -325,9 +325,27 @@ display: grid;
     width: 100vw;
     background-color: blue;
     display: grid;
-    grid-template-columns: 1fr;
-    text-align: justify;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+.bliv_en_del_af_os_tekst {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.bliv_en_del_af_os_tekst h2 {
+    color: white;
+}
+
+.bliv_en_del_af_os_tekst h3 {
+    color: white;
+}
+
+.bliv_en_del_af_os_tekst a {
+    color: white;
+}
+
 
 
 /* ----- FOOTER ----- */
