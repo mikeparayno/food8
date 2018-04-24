@@ -1,71 +1,98 @@
 /*------- MOBIL --------*/
 
 @media screen and (max-width:767px) {
-
-    /* ----- FORSIDE ----- */
-    /* ----- KORT OM ----- */
-    #food8 {
-        height: 100vh;
-        width: 100vw;
+    /* ----- NAVIGATION ----- */
+    #menu_open {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .food8_billede {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        background-image: url(img/IMG_9032.jpg);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-    }
-
-    .food8_tekst {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        background-color: blue;
-    }
-
-
-    #foodaid {
-        height: 100vh;
-        width: 100vw;
+    .home_logo {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px 10px;
+        grid-column: 1 / 2;
     }
 
-    .foodaid_billede {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        background-color: red;
-        background-image: url(img/IMG_9032.jpg);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
+    .nav_nyheder {
+        display: grid;
+        grid-column: 2 / 3;
     }
 
-    .foodaid_tekst {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        background-color: blue;
+    .nav_spisesteder {
+        display: grid;
+        grid-column: 3 / 4;
+    }
+    .nav_foodaid {
+        display: grid;
+        grid-column: 4 / 5;
+    }
+
+    .nav_om {
+        display: grid;
+        grid-column: 5 / 6;
     }
 }
 
+/* ----- NAVIGATION SLUT ----- */
+
+/* ----- FORSIDE ----- */
+
+#food8 {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 10px;
+}
+
+.food8_billede {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(img/IMG_9032.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.food8_tekst {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: blue;
+}
 
 
-/* ----- KORT OM SLUT ----- */
+#foodaid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 10px;
+}
 
-/* ----- NYHEDSBREV ----- */
+.foodaid_billede {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: red;
+    background-image: url(img/IMG_9032.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.foodaid_tekst {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: blue;
+}
+
+}
 
 #nyhedsbrev {
     display: grid;
@@ -93,7 +120,60 @@
     background-color: blue;
 }
 
-/* ----- NYHEDSBREV SLUT ----- */
+/* ----- OM ----- */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #fbfaf3;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#om {
+    display: grid;
+    grid-auto-columns: 1fr;
+    text-align: justify;
+    height: 200vh;
+    width: 200vw;
+}
+
+#tekst {
+
+    height: 100vh;
+    width: 100vw;
+    grid-column: 1 / 2;
+
+}
+
+#bliv_en_del_af_os {
+    display: grid;
+    grid-auto-columns: 1fr;
+    background-color: ;
+    margin: 1.5em;
+    text-align: justify;
+}
+
+#video {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    padding-top: 3em;
+    height: 100vh;
+    width: 100vw;
+}
+
+#video iframe {
+    grid-column: 1 / 2;
+    align-items: center;
+    justify-items: center;
+    width: auto;
+    height: auto;
+
+}
 
 /* ----- FOOTER ----- */
 
@@ -192,101 +272,4 @@ footer {
 
 /*------- DESKTOP -------*/
 
-@media screen and (min-width:1024px) {
-
-    /* ----- FOOTER ----- */
-    /*------- LOL --------*/
-    @media screen and (max-width: 767px) {
-        body {
-            background-color: #fbfaf3;
-
-        }
-
-
-        #om {
-            display: grid;
-            grid-auto-columns: 1fr;
-            text-align: justify;
-            height: 200vh;
-            width: 200vw;
-        }
-
-        #tekst {
-
-            height: 100vh;
-            width: 100vw;
-            grid-column: 1 / 2;
-
-        }
-
-        #bliv_en_del_af_os {
-            display: grid;
-            grid-auto-columns: 1fr;
-            background-color: ;
-            margin: 1.5em;
-            text-align: justify;
-        }
-
-        #video {
-            display: grid;
-            position: relative;
-            grid-template-columns: 1fr;
-            padding-top: 3em;
-            height: 100vh;
-            width: 100vw;
-        }
-
-        #video iframe {
-            grid-column: 1 / 2;
-            align-items: center;
-            justify-items: center;
-            width: auto;
-            height: auto;
-
-        }
-
-
-
-    }
-
-
-    * {
-        margin: 0;
-    }
-
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    /*---------NAV--------*/
-    @media screen and (max-width:767px) {
-
-        #menu_open {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        }
-
-        .home_logo {
-            display: grid;
-            grid-column: 1 / 2;
-        }
-
-        .nav_nyheder {
-            display: grid;
-            grid-column: 2 / 3;
-        }
-
-        .nav_spisesteder {
-            display: grid;
-            grid-column: 3 / 4;
-        }
-        .nav_foodaid {
-            display: grid;
-            grid-column: 4 / 5;
-        }
-
-        .nav_om {
-            display: grid;
-            grid-column: 5 / 6;
-        }
-    }
+@media screen and (min-width:1024px) {}
