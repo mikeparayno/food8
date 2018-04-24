@@ -2,171 +2,227 @@
 
 @media screen and (max-width:767px) {
     /* ----- NAVIGATION ----- */
+    /* MENU */
+    header nav {
+        max-width: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-width 0.6s;
+        z-index: 3;
+    }
+
+
+    header nav.show {
+        max-height: 100vh;
+        max-width: 100vw;
+        position: fixed;
+        z-index: 3;
+        right: 0;
+    }
+
+    #home_logo {
+        background-image: url(logo.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+        justify-self: center;
+
+    }
+
     #menu_open {
+        background-color: black;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        z-index: 3;
     }
 
-    .home_logo {
-        display: grid;
+    #menu_open a {
+        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-size: 1em;
+        margin-bottom: 10vh;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        z-index: 3;
+    }
+
+    /* rotate forst bar */
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-9px, 3px);
+    }
+
+    /* fade out the second bad */
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    /* rotate last bar */
+    .change .bar3 {
+        transform: rotate(45deg) translate(-6px, -2px);
+    }
+
+    /* BURGER MENU */
+    .burger {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        justify-self: end;
+        padding-right: 25px;
+        padding-top: 20px;
         grid-column: 1 / 2;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 5;
     }
 
-    .nav_nyheder {
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 22px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    /* ----- NAVIGATION SLUT ----- */
+    /* ----- FORSIDE ----- */
+    /* splash */
+    #splash {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* SPLASH CONTAINER */
+    #splash_container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+
+    /* SPLASH SPRITE */
+    #splash_sprite {
+        width: 100%;
+        height: 100%;
+        background-image: url(splash_mobile-02.png);
+        background-size: 700% 100%;
+    }
+
+    .splash_cycle {
+        animation-name: splash_cycle_kf;
+        animation-duration: 7s;
+        animation-timing-function: steps(7);
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes splash_cycle_kf {
+        from {
+            background-position: 0% -100%;
+        }
+        to {
+            background-position: -700% -100%;
+        }
+    }
+
+
+    #logo_parent {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
         display: grid;
-        grid-column: 2 / 3;
+
     }
 
-    .nav_spisesteder {
+    #logo {
+        width: 350px;
+        height: 220px;
+        background-image: url(logo.png);
+        background-size: 100% 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        z-index: 2;
+    }
+
+    #forside_tekst {
+        justify-self: center;
+        align-self: flex-start;
+    }
+
+
+    /* splash slut */
+    #food8 {
+        height: 100vh;
+        width: 100vw;
         display: grid;
-        grid-column: 3 / 4;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 10px;
     }
-    .nav_foodaid {
+
+    .food8_billede {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-image: url(img/IMG_9032.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
+    .food8_tekst {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: blue;
+    }
+
+
+    #foodaid {
+        height: 100vh;
+        width: 100vw;
         display: grid;
-        grid-column: 4 / 5;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 10px;
     }
 
-    .nav_om {
-        display: grid;
-        grid-column: 5 / 6;
+    .foodaid_billede {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: red;
+        background-image: url(img/IMG_9032.jpg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
     }
-}
 
-/* ----- NAVIGATION SLUT ----- */
-
-/* ----- FORSIDE ----- */
-
-/* splash */
-
-#splash {
-    height: 100vh;
-    width: 100vw;
-}
-
-/* SPLASH CONTAINER */
-
-#splash_container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-
-
-/* SPLASH SPRITE */
-
-#splash_sprite {
-    width: 100%;
-    height: 100%;
-    background-image: url(splash_mobile-02.png);
-    background-size: 700% 100%;
-}
-
-.splash_cycle {
-    animation-name: splash_cycle_kf;
-    animation-duration: 7s;
-    animation-timing-function: steps(7);
-    animation-iteration-count: infinite;
-}
-
-@keyframes splash_cycle_kf {
-    from {
-        background-position: 0% -100%;
+    .foodaid_tekst {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: blue;
     }
-    to {
-        background-position: -700% -100%;
-    }
-}
-
-
-#logo_parent {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: 2;
-    display: grid;
-
-}
-
-#logo {
-    width: 350px;
-    height: 220px;
-    background-image: url(logo.png);
-    background-size: 100% 100%;
-    justify-self: center;
-    align-self: center;
-}
-
-#overlay {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    position: fixed;
-    z-index: 2;
-}
-
-#forside_tekst {
-    justify-self: center;
-    align-self: flex-start;
-}
-
-/* splash slut */
-
-#food8 {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px 10px;
-}
-
-.food8_billede {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    background-image: url(img/IMG_9032.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-}
-
-.food8_tekst {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: blue;
-}
-
-
-#foodaid {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px 10px;
-}
-
-.foodaid_billede {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    background-color: red;
-    background-image: url(img/IMG_9032.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-}
-
-.foodaid_tekst {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    background-color: blue;
-}
 
 }
 
