@@ -27,9 +27,16 @@
         </nav>
     </div>
 
-
     <section id="filtrering">
     </section>
+
+    <template>
+    <article>
+      <h2 data-header></h2>
+       <img data-image src="" alt="">
+        <p data-description></p>
+    </article>
+    </template>
 
     <section id="nyhedsbrev">
         <div class="nyhedsbrev_billede"></div>
@@ -62,13 +69,7 @@
     <section id="display">
     </section>
 
-    <template>
-    <article>
-      <h2 data-header></h2>
-       <img data-image src="" alt="">
-        <p data-description></p>
-    </article>
-    </template>
+
     <script>
         //NYHEDER
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/nyheder";
@@ -99,7 +100,6 @@
                 display.appendChild(klon);
             });
         }
-
     </script>
 </body>
 
