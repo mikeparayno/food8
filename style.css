@@ -312,10 +312,11 @@ body {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    height: 80vh;
+    grid-template-rows: 1fr repeat(6, 1fr) 1fr;
+    height: 100vh;
     width: 100vw;
     background-color: lightgray;
+
 }
 
 #instagram {
@@ -342,7 +343,7 @@ footer {
     grid-row-end: 4;
 }
 
-#bliv_en_del_af_os {
+#bliv_en_del_af_os_footer {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 4;
@@ -369,8 +370,9 @@ footer {
     grid-row-start: 7;
     grid-row-end: 8;
     background-image: url(stroem.png);
-    background-size: auto 100%;
+    background-size: 70% auto;
     background-repeat: no-repeat;
+
 }
 
 /*------- STYLING AF FB OG IG IKONER-------*/
