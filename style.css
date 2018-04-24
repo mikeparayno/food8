@@ -195,3 +195,98 @@ footer {
 @media screen and (min-width:1024px) {
 
     /* ----- FOOTER ----- */
+    /*------- LOL --------*/
+    @media screen and (max-width: 767px) {
+        body {
+            background-color: #fbfaf3;
+
+        }
+
+
+        #om {
+            display: grid;
+            grid-auto-columns: 1fr;
+            text-align: justify;
+            height: 200vh;
+            width: 200vw;
+        }
+
+        #tekst {
+
+            height: 100vh;
+            width: 100vw;
+            grid-column: 1 / 2;
+
+        }
+
+        #bliv_en_del_af_os {
+            display: grid;
+            grid-auto-columns: 1fr;
+            background-color: ;
+            margin: 1.5em;
+            text-align: justify;
+        }
+
+        #video {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr;
+            padding-top: 3em;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #video iframe {
+            grid-column: 1 / 2;
+            align-items: center;
+            justify-items: center;
+            width: auto;
+            height: auto;
+
+        }
+
+
+
+    }
+
+
+    * {
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    /*---------NAV--------*/
+    @media screen and (max-width:767px) {
+
+        #menu_open {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .home_logo {
+            display: grid;
+            grid-column: 1 / 2;
+        }
+
+        .nav_nyheder {
+            display: grid;
+            grid-column: 2 / 3;
+        }
+
+        .nav_spisesteder {
+            display: grid;
+            grid-column: 3 / 4;
+        }
+        .nav_foodaid {
+            display: grid;
+            grid-column: 4 / 5;
+        }
+
+        .nav_om {
+            display: grid;
+            grid-column: 5 / 6;
+        }
+    }
