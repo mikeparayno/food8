@@ -300,7 +300,6 @@
 
 /* ----- OM ----- */
 
-
 #om {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -382,30 +381,29 @@
 }
 
 #food_aid_raavarer {
-    background-color: aqua;
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    align-self: center;
+    text-align: center;
 
 }
 
 #food_aid_barer {
-    background-color: cadetblue;
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    text-align: center;
 
 }
 
 #food_aid_guides {
-    background-color: palevioletred;
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    text-align: center;
 
 }
 
