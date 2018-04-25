@@ -372,26 +372,46 @@ display: grid;
 
 #food_aid_kategoriside {
     display: grid;
-    height: 200vh;
+    height: 100vh;
     width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 #food_aid_tekst {
     background-color: rosybrown;
     height: 100%;
     width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
 }
 
 #food_aid_raavarer {
     background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
 }
 
 #food_aid_barer {
     background-color: cadetblue;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
 }
 
 #food_aid_guides {
     background-color: palevioletred;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
 }
 
 
