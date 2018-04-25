@@ -359,6 +359,8 @@ display: grid;
 
 #food_aid_tekst {
     background-color: rosybrown;
+    height: 100%;
+    width: 100%;
 }
 
 #food_aid_raavarer {
