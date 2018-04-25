@@ -300,13 +300,6 @@
 
 /* ----- OM ----- */
 
-/*
-display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    position: absolute;
-    top: 15vh;
-    padding: 0 25px;
-*/
 
 #om {
     display: grid;
