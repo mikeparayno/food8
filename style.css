@@ -367,29 +367,20 @@
     height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #food_aid_tekst {
-    background-color: rosybrown;
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    align-self: center;
+    text-align: center;
+    padding-top: 100px;
 
 }
 
 #food_aid_raavarer {
-    height: 100%;
-    width: 100%;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    text-align: center;
-
-}
-
-#food_aid_barer {
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
@@ -398,11 +389,20 @@
 
 }
 
-#food_aid_guides {
+#food_aid_barer {
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
+    text-align: center;
+
+}
+
+#food_aid_guides {
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
     text-align: center;
 
 }
