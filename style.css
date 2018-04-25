@@ -418,6 +418,15 @@
 
 /* ----- NYHEDER ----- */
 
+#article_nyhed {
+    width: 100vw;
+}
+
+#article_nyhed img {
+    width: 100%;
+
+}
+
 /* ----- NYHEDER SLUT ----- */
 
 footer {
