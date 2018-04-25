@@ -368,6 +368,7 @@
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #f5f1e6;
 }
 
 #food_aid_tekst {
@@ -381,6 +382,7 @@
 }
 
 #food_aid_raavarer {
+
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
@@ -390,6 +392,7 @@
 }
 
 #food_aid_barer {
+
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
@@ -399,6 +402,7 @@
 }
 
 #food_aid_guides {
+
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
