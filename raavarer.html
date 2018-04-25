@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodAid</title>
+    <title>Råvarer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -65,7 +65,7 @@
         </div>
     </footer>
 
-    <template id="temp_nyhed">
+    <template id="temp_raavare">
         <article>
             <h2 data-header></h2>
             <img data-image src="" alt="">
@@ -74,31 +74,31 @@
      </template>
 
     <script>
-        //NYHEDER
-        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/nyheder";
-        let nyheder = [];
+        //RÅVARER
+        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/raavarer";
+        let raavarer = [];
         let display = document.querySelector("#display");
-        let template = document.querySelector("#temp_nyhed");
+        let template = document.querySelector("#temp_raavare");
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let dataJson = await fetch(jSonUrl);
-            nyheder = await dataJson.json();
+            raavarer = await dataJson.json();
             //viser arrayet efter json er hentet ind
-            console.log(nyheder);
-            visNyheder();
+            console.log(raavarer);
+            visRaavarer();
         }
 
-        function visNyheder() {
-            nyheder.forEach(nyhed => {
-                console.log(nyhed);
+        function visRaavarer() {
+            raavarer.forEach(raavare => {
+                console.log(raavare);
                 let klon = template.cloneNode(true).content;
                 console.log(klon);
-                klon.querySelector("[data-header]").textContent = nyhed.title.rendered;
-                klon.querySelector("[data-image]").src = nyhed.acf.billede.url;
-                klon.querySelector("[data-image]").alt = "billede af" + nyhed.acf.billede.title;
-                console.log(klon.querySelector("[data-image]").alt);
+                klon.querySelector("[data-header]").textContent = raavare.title.rendered;
+                klon.querySelector("[data-image]").src = raavare.acf.billede.url;
+                klon.querySelector("[data-image]").alt = "billede af" + raavare.acf.billede.title;
+                //console.log(klon.querySelector("[data-image]").alt);
                 //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
 
                 display.appendChild(klon);
