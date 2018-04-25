@@ -366,6 +366,34 @@ display: grid;
 }
 
 
+/* ----- OM SLUT ----- */
+
+/* ----- FOODAIDKATEGORISIDE ----- */
+
+#food_aid_kategoriside {
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+}
+
+#food_aid_tekst {
+    background-color: rosybrown;
+}
+
+#food_aid_raavarer {
+    background-color: aqua;
+}
+
+#food_aid_barer {
+    background-color: cadetblue;
+}
+
+#food_aid_guides {
+    background-color: palevioletred;
+}
+
+
+/* ----- FOODAIDKATEGORISIDE SLUT ----- */
 
 /* ----- FOOTER ----- */
 
