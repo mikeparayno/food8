@@ -268,15 +268,9 @@
     .foodaid_billede {
         grid-column-start: 1;
         grid-column-end: 5;
-<<<<<<< HEAD
         grid-row-start: 2;
         grid-row-end: 3;
-        background-image: url(foodAid.png);
-=======
-        grid-row-start: 1;
-        grid-row-end: 4;
         background-image: url(img/logo.png);
->>>>>>> origin/master
         max-height: auto;
         max-width: 100%;
         background-size: 100%;
