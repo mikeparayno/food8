@@ -184,20 +184,18 @@
     #logo2_parent {
         height: 100vh;
         width: 100vw;
-        position: absolute;
         z-index: 2;
         display: grid;
 
     }
 
     #logo2 {
-        width: 350px;
-        height: 220px;
+        width: 170px;
+        height: 100px;
         background-image: url(foodAid.png);
         background-size: 100% 100%;
-        justify-self: center;
-        align-self: center;
     }
+
 
     #overlay {
         height: 100%;
@@ -228,8 +226,11 @@
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 4;
-        background-image: url(img/IMG_9032.jpg);
-        background-size: auto 100%;
+        background-image: url(logo.png);
+        max-height: auto;
+        max-width: 100%;
+        margin: 2em;
+        background-size: 100%;
         background-repeat: no-repeat;
     }
 
@@ -238,7 +239,9 @@
         grid-column-end: 5;
         grid-row-start: 4;
         grid-row-end: 5;
-        background-color: blue;
+        background-color: #fbfaf3;
+        margin: 1em;
+
     }
 
 
@@ -256,10 +259,13 @@
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 4;
-        background-color: red;
         background-image: url(foodAid.png);
-        background-size: auto 100%;
+        max-height: auto;
+        max-width: 100%;
+        margin: 2em;
+        background-size: 100%;
         background-repeat: no-repeat;
+
     }
 
     .foodaid_tekst {
@@ -267,7 +273,9 @@
         grid-column-end: 5;
         grid-row-start: 4;
         grid-row-end: 5;
-        background-color: beige;
+        background-color: #fbfaf3;
+        margin: 1em;
+
     }
 
 }
@@ -285,17 +293,18 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    background-image: url(img/IMG_9032.jpg);
-    background-size: auto 100%;
+    background-image: url(img/brev.svg);
+    background-size: 100%;
+    max-height: auto;
     background-repeat: no-repeat;
 }
 
 .nyhedsbrev_tekst {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
-    background-color: blue;
+    background-color: #fbfaf3;
 }
 
 /* ----- OM ----- */
