@@ -357,6 +357,10 @@ display: grid;
     width: 100vw;
 }
 
+#food_aid_tekst {
+    background-color: rosybrown;
+}
+
 #food_aid_raavarer {
     background-color: aqua;
 }
@@ -369,6 +373,8 @@ display: grid;
     background-color: palevioletred;
 }
 
+
+/* ----- FOODAIDKATEGORISIDE SLUT ----- */
 
 /* ----- FOOTER ----- */
 
