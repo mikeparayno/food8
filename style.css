@@ -321,6 +321,7 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
+    text-align: center;
 }
 
 /* ----- OM ----- */
@@ -518,7 +519,7 @@ footer h3 {
     grid-column-end: 5;
     grid-row-start: 7;
     grid-row-end: 8;
-    background-image: url(stroem.png);
+    background-image: url(stroem_white.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 40vw;
