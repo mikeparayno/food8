@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="da">
 
@@ -30,6 +31,8 @@
     </header>
 
     <section id="filtrering">
+        <button class "oekologi">Økologi</button>
+        <button class "biodynamik">Biodynamik</button>
     </section>
 
 
@@ -74,6 +77,15 @@
     </template>
 
     <script>
+        //FILTERKNAPPER
+        let filterknapper = document.querySelectorAll("#filter button").forEach(knap => {
+            knap.addEventListener("click", (e) => {
+                filtertype = e.target.className;
+                filternavn = e.target.textContent;
+                hentJson();
+            });
+        });
+
         //NYHEDER
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/nyheder";
         let nyheder = [];
