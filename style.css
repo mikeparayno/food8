@@ -172,12 +172,13 @@
     }
 
     #logo {
-        width: 350px;
-        height: 220px;
+        width: 80%;
+        height: 40%;
         background-image: url(logo.png);
         background-size: 100% 100%;
         justify-self: center;
         align-self: center;
+        margin-top: 20vh;
     }
 
 
@@ -208,6 +209,9 @@
     #forside_tekst {
         justify-self: center;
         align-self: flex-start;
+        color: #5e6773;
+        margin-bottom: 15vh;
+
     }
 
 
