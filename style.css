@@ -180,6 +180,25 @@
         align-self: center;
     }
 
+
+    #logo2_parent {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        display: grid;
+
+    }
+
+    #logo2 {
+        width: 350px;
+        height: 220px;
+        background-image: url(foodAid.png);
+        background-size: 100% 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
     #overlay {
         height: 100%;
         width: 100%;
@@ -238,7 +257,7 @@
         grid-row-start: 1;
         grid-row-end: 4;
         background-color: red;
-        background-image: url(img/IMG_9032.jpg);
+        background-image: url(foodAid.png);
         background-size: auto 100%;
         background-repeat: no-repeat;
     }
@@ -248,7 +267,7 @@
         grid-column-end: 5;
         grid-row-start: 4;
         grid-row-end: 5;
-        background-color: blue;
+        background-color: beige;
     }
 
 }
@@ -340,6 +359,56 @@
 }
 
 
+/* ----- OM SLUT ----- */
+
+/* ----- FOODAIDKATEGORISIDE ----- */
+
+#food_aid_kategoriside {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#food_aid_tekst {
+    background-color: rosybrown;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+#food_aid_raavarer {
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+}
+
+#food_aid_barer {
+    background-color: cadetblue;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+}
+
+#food_aid_guides {
+    background-color: palevioletred;
+    height: 100%;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+}
+
+
+/* ----- FOODAIDKATEGORISIDE SLUT ----- */
 
 /* ----- FOOTER ----- */
 
