@@ -496,6 +496,19 @@ footer {
 
 }
 
+/*------- SPISESTEDER-------*/
+
+#article_spisesteder {
+    width: 100vw;
+}
+
+#article_spisesteder img {
+    width: 100%;
+
+}
+
+/*------- SPISESTEDER SLUT-------*/
+
 /*------- STYLING AF FB OG IG IKONER-------*/
 
 .fa {
