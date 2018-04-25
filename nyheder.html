@@ -78,6 +78,9 @@
 
     <script>
         //FILTERKNAPPER
+        let filtertype;
+        let filternavn = "Alle";
+
         let filterknapper = document.querySelectorAll("#filter button").forEach(knap => {
             knap.addEventListener("click", (e) => {
                 filtertype = e.target.className;
@@ -85,6 +88,21 @@
                 hentJson();
             });
         });
+
+        async function hentJson() {
+            let jsonData = await fetch(apiURL);
+            observationer = await jsonData.json();
+            console.log(observationer);
+            lavfiltrering();
+        }
+
+        function lavfiltrering() {
+            document.querySelector("overskrift").textContent = filternavn;
+            if (filternavn != "Alle") {
+                observationer = observationer.filter(obs => obs.acf[filtertype] == filternavn);
+            }
+            visObservationer()
+        }
 
         //NYHEDER
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/nyheder";
