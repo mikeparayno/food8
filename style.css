@@ -384,6 +384,7 @@ display: grid;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-self: center;
 
 }
 
@@ -393,6 +394,7 @@ display: grid;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    align-self: center;
 
 }
 
