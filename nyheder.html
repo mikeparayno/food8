@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="da">
 
@@ -127,6 +126,7 @@
                 klon.querySelector("[data-header]").textContent = nyhed.title.rendered;
                 klon.querySelector("[data-image]").src = nyhed.acf.billede.url;
                 klon.querySelector("[data-image]").alt = "billede af" + nyhed.acf.billede.title;
+                klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
                 console.log(klon.querySelector("[data-image]").alt);
                 //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
 
@@ -141,6 +141,7 @@
 
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
+
     </script>
 
 </body>
