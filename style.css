@@ -173,7 +173,7 @@
 
     #logo {
         width: 80%;
-        height: 40%;
+        height: 70%;
         background-image: url(logo.png);
         background-size: 100% 100%;
         justify-self: center;
@@ -210,12 +210,13 @@
         justify-self: center;
         align-self: flex-start;
         color: #5e6773;
-        margin-bottom: 15vh;
+        margin-top: 10vh;
 
     }
 
     #pil_ned {
         text-align: center;
+        margin-top: 40vh;
     }
 
 
