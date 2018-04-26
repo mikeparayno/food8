@@ -115,7 +115,7 @@
     .bar3 {
         width: 22px;
         height: 3px;
-        background-color: white;
+        background-color: #5e6773;
         margin: 4px 0;
         transition: 0.4s;
     }
@@ -222,6 +222,7 @@
 
     .fa-angle-down:before {
         font-size: 3em;
+        color: #5e6773;
 
     }
 
