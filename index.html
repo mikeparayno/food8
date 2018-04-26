@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <script src=""></script>
+    <header>
+        <div class="menu">
+            <button class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+            <nav>
+                <div id="menu_open">
+                    <a href="index.html" id="home_logo"></a>
+                    <a href="nyheder.html" id="nav_nyheder">Nyheder</a>
+                    <a href="spisesteder.html" id="nav_spisesteder">Spisesteder</a>
+                    <a href="foodaidkategoriside.html" id="nav_foodaid">FoodAid</a>
+                    <a href="om.html" id="nav_om">Om</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="splash">
+        <div id="overlay"></div>
+        <div id="splash_container">
+            <div id="splash_sprite" class="splash_cycle"></div>
+        </div>
+        <div id="logo_parent">
+            <div id="logo"></div>
+            <div id="forside_tekst">
+                <em><h2>Din virtuelle food court</h2></em>
+            </div>
+        </div>
+    </section>
+
+    <section id="kort_om">
+        <div id="food8">
+            <div class="food8_billede">
+            </div>
+
+            <div class="food8_tekst">
+
+                <h3>Food8 er en restaurationsgruppe af individuelle restauratører der har slået sig sammen. Her kan man gå på opdagelse blandt kendte og ukendte restauranter, madbutikker og barer – eller det, som vi ganske enkelt kalder steder.</h3>
+
+                <!--<p>Der vil altid være nye oplevelser og inspiration at hente på food8.dk. Vi samler nyheder, guides og bordbooking samme sted. Så har du allerede oplevet en af restauranter på food8, eller er der fuldt booket, så inspirerer vi dig til en anden god oplevelse. I det ugentlige nyhedsbrev kan du få historier, guides og nyheder om food8s steder. Fælles for alle de steder, du finder på food8.dk er, at de er drevet af forskellige restauratører, som er gået sammen i en restaurationsgruppe for samlet at kunne tilbyde flere oplevelser. Vil du i kontakt med os, så sig hej på info@food8.dk.</p>-->
+
+            </div>
+        </div>
+        <div id="foodaid">
+            <div class="foodaid_billede"></div>
+            <div class="foodaid_tekst">
+                <h3>FoodAid er din hjælpeguide hvis du mangler inspiration. Her kan du finde barer, samt steder med råvarer og vin specielt udvalgt af food8. Vores guidesektion inspirerer dig til din næste madoplevelse.</h3>
+
+                <!--<p>Der vil altid være nye oplevelser og inspiration at hente på food8.dk. Vi samler nyheder, guides og bordbooking samme sted. Så har du allerede oplevet en af restauranter på food8, eller er der fuldt booket, så inspirerer vi dig til en anden god oplevelse. I det ugentlige nyhedsbrev kan du få historier, guides og nyheder om food8s steder. Fælles for alle de steder, du finder på food8.dk er, at de er drevet af forskellige restauratører, som er gået sammen i en restaurationsgruppe for samlet at kunne tilbyde flere oplevelser. Vil du i kontakt med os, så sig hej på info@food8.dk.</p>-->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="nyhedsbrev">
+        <div class="nyhedsbrev_billede">
+
+        </div>
+        <div class="nyhedsbrev_tekst">
+            <h2>Nyhedsbrev</h2>
+
+            <p>Tilmeld dig vores nyhedsbrev og få ugentlige guides og nyheder fra Food8.</p>
+
+        </div>
+
+
+    </section>
+
+
+    <footer>
+        <div id="instagram">
+            <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
+        </div>
+        <div id="facebook">
+            <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
+        </div>
+        <div id="kontakt">
+            <h3>Kontakt</h3>
+        </div>
+        <div id="bliv_en_del_af_os_footer">
+            <h3>Bliv en del af os</h3>
+        </div>
+        <div id="login">
+            <h3>Login</h3>
+        </div>
+        <div id="cookie_og_privatlivspolitik">
+            <h3>Cookie- og privatlivspolitik</h3>
+        </div>
+        <div id="stroem">
+            <a href="http://stromworks.com"></a>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".burger").classList.toggle("change");
+            document.querySelector("nav").classList.toggle("show");
+        }
+
+        document.querySelector(".burger").addEventListener("click", toggleMenu);
+        document.querySelector("nav").addEventListener("click", toggleMenu);
+    </script>
 </body>
+
 </html>

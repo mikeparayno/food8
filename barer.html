@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="">
+
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
@@ -24,12 +25,129 @@
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/inspiration";
         let inspiration = [];
         let display = document.querySelector("#display");
-        let template = document.querySelector("template");
+        let template = document.querySelector("template"); ===
+        === = <
+        title > Barer < /title> <
+            link rel = "stylesheet"
+        href = "style.css" >
+            <
+            link rel = "stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+            <
+            /head>
+
+            <
+            body >
+            <
+            header >
+            <
+            div class = "menu" >
+            <
+            button class = "burger" >
+            <
+            div class = "bar1" > < /div> <
+            div class = "bar2" > < /div> <
+            div class = "bar3" > < /div> <
+            /button> <
+            nav >
+            <
+            div id = "menu_open" >
+            <
+            a href = "index.html"
+        id = "home_logo" > < /a> <
+            a href = "nyheder.html"
+        id = "nav_nyheder" > Nyheder < /a> <
+            a href = "spisesteder.html"
+        id = "nav_spisesteder" > Spisesteder < /a> <
+            a href = "foodaidkategoriside.html"
+        id = "nav_foodaid" > FoodAid < /a> <
+            a href = "om.html"
+        id = "nav_om" > Om < /a> <
+            /div> <
+            /nav> <
+            /div> <
+            /header>
+
+            <
+            div id = "logo2_parent" >
+            <
+            div id = "logo2" > < /div> <
+            /div>
+
+            <
+            section id = "display" >
+            <
+            /section>
+
+            <
+            section id = "nyhedsbrev" >
+            <
+            div class = "nyhedsbrev_billede" > < /div> <
+            div class = "nyhedsbrev_tekst" > < /div> <
+            /section>
+
+            <
+            footer >
+            <
+            div id = "instagram" >
+            <
+            a href = "https://www.instagram.com/food8dk/"
+        class = "fa fa-instagram" > < /a> <
+            /div> <
+            div id = "facebook" >
+            <
+            a href = "https://www.facebook.com/food8dk/"
+        class = "fa fa-facebook" > < /a> <
+            /div> <
+            div id = "kontakt" >
+            <
+            h3 > Kontakt < /h3> <
+            /div> <
+            div id = "bliv_en_del_af_os_footer" >
+            <
+            h3 > Bliv en del af os < /h3> <
+            /div> <
+            div id = "login" >
+            <
+            h3 > Login < /h3> <
+            /div> <
+            div id = "cookie_og_privatlivspolitik" >
+            <
+            h3 > Cookie - og privatlivspolitik < /h3> <
+            /div> <
+            div id = "stroem" >
+            <
+            a href = "http://stromworks.com" > < /a> <
+            /div> <
+            /footer>
+
+            <
+            template id = "temp_bar" >
+            <
+            article >
+            <
+            h2 data - header > < /h2> <
+            img data - image src = ""
+        alt = "" >
+            <
+            p data - description > < /p> <
+            /article> <
+            /template>
+
+            <
+            script >
+            //BARER
+            let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/barer";
+        let barer = [];
+        let display = document.querySelector("#display");
+        let template = document.querySelector("#temp_bar"); >>>
+        >>> > origin / master
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
-            let dataJson = await fetch(jSonUrl);
+            let dataJson = await fetch(jSonUrl); <<
+            << << < HEAD
             inspiration = await dataJson.json();
             //viser arrayet efter json er hentet ind
             console.log(inspiration);
@@ -38,17 +156,47 @@
 
         function visInspiration() {
             inspiration.forEach(inspi => {
-                console.log(inspi);
-                let klon = template.cloneNode(true).content;
-                console.log(klon);
-                klon.querySelector("[data-header]").textContent = inspi.title.rendered;
-                klon.querySelector("[data-image]").src = inspi.acf.billede.url;
-                klon.querySelector("[data-image]").alt = "billede af" + inspi.acf.billede.title;
-                klon.querySelector("[data-description]").innerHTML = inspi.content.rendered;
+                        console.log(inspi);
+                        let klon = template.cloneNode(true).content;
+                        console.log(klon);
+                        klon.querySelector("[data-header]").textContent = inspi.title.rendered;
+                        klon.querySelector("[data-image]").src = inspi.acf.billede.url;
+                        klon.querySelector("[data-image]").alt = "billede af" + inspi.acf.billede.title;
+                        klon.querySelector("[data-description]").innerHTML = inspi.content.rendered; ===
+                        === =
+                        barer = await dataJson.json();
+                        //viser arrayet efter json er hentet ind
+                        console.log(barer);
+                        visBarer();
+                    }
 
-                display.appendChild(klon);
-            });
-        }
+                    function visBarer() {
+                        barer.forEach(bar => {
+                            console.log(bar);
+                            let klon = template.cloneNode(true).content;
+                            console.log(klon);
+                            klon.querySelector("[data-header]").textContent = bar.title.rendered;
+                            klon.querySelector("[data-image]").src = bar.acf.billede.url;
+                            klon.querySelector("[data-image]").alt = "billede af" + bar.acf.billede.title;
+                            //console.log(klon.querySelector("[data-image]").alt);
+                            //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+                            >>>
+                            >>> > origin / master
+
+                            display.appendChild(klon);
+                        });
+                    } <<
+                    << << < HEAD ===
+                    === =
+
+                    function toggleMenu() {
+                        document.querySelector(".burger").classList.toggle("change");
+                        document.querySelector("nav").classList.toggle("show");
+                    }
+
+                    document.querySelector(".burger").addEventListener("click", toggleMenu); document.querySelector("nav").addEventListener("click", toggleMenu); >>>
+                    >>> > origin / master
+
     </script>
 </body>
 
