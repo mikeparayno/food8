@@ -214,6 +214,16 @@
 
     }
 
+    #pil_ned {
+        text-align: center;
+    }
+
+
+    .fa-angle-down:before {
+        font-size: 3em;
+
+    }
+
 
     /* splash slut */
     #food8 {
