@@ -115,7 +115,7 @@
     .bar3 {
         width: 22px;
         height: 3px;
-        background-color: white;
+        background-color: #5e6773;
         margin: 4px 0;
         transition: 0.4s;
     }
@@ -173,7 +173,7 @@
 
     #logo {
         width: 80%;
-        height: 40%;
+        height: 90%;
         background-image: url(logo.png);
         background-size: 100% 100%;
         justify-self: center;
@@ -210,7 +210,19 @@
         justify-self: center;
         align-self: flex-start;
         color: #5e6773;
-        margin-bottom: 15vh;
+        margin-top: 10vh;
+
+    }
+
+    #pil_ned {
+        text-align: center;
+        margin-top: 40vh;
+    }
+
+
+    .fa-angle-down:before {
+        font-size: 3em;
+        color: #5e6773;
 
     }
 
@@ -225,7 +237,7 @@
         grid-gap: 20px 10px;
     }
 
-    .food8_billede {
+    /* .food8_billede {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 2;
@@ -235,63 +247,72 @@
         max-width: 100%;
         background-size: 100%;
         background-repeat: no-repeat;
-        margin: 120px 50px 0 50px;
+        margin: 120px 50px 0 50px;*/
+}
 
-    }
+.food8_billede {
+    grid-column-start: 1 / 4;
 
-    .food8_tekst {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        background-color: #fbfaf3;
-        margin: 1em;
-        padding: 0 5vw;
-    }
+}
 
-    .food8_tekst h3 {
-        text-align: center
-    }
+.food8_billede img {
+    width: 90vw;
+    height: auto;
+}
+
+.food8_tekst {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #fbfaf3;
+    margin: 1em;
+    padding: 0 5vw;
+}
+
+.food8_tekst h3 {
+    text-align: center
+}
 
 
-    #foodaid {
-        height: 100vh;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 4fr 3fr 1fr;
-        grid-gap: 20px 10px;
-        background-color: rgb(225, 160, 173, 0.5);
+#foodaid {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 3fr 1fr;
+    grid-gap: 20px 10px;
+    background-color: rgb(225, 160, 173, 0.5);
 
-    }
+}
 
-    .foodaid_billede {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        background-image: url(img/logo.png);
-        max-height: auto;
-        max-width: 100%;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin: 120px 50px 0 50px;
+.foodaid_billede {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: url(img/logo.png);
+    max-height: auto;
+    max-width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 120px 50px 0 50px;
 
-    }
+}
 
-    .foodaid_tekst {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        margin: 1em;
-        padding: 0 5vw;
+.foodaid_tekst {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 1em;
+    padding: 0 5vw;
 
-    }
+}
 
-    .foodaid_tekst h3 {
-        text-align: center
-    }
+.foodaid_tekst h3 {
+    text-align: center
+}
 
 }
 
@@ -451,6 +472,20 @@
 #article_nyhed img {
     width: 100%;
 
+}
+
+#article_nyhed h2 {
+    color: darkred;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+#article_nyhed h3 {
+    padding: 10px;
+}
+
+#article_nyhed p {
+    padding: 10px;
 }
 
 /* ----- NYHEDER SLUT ----- */
