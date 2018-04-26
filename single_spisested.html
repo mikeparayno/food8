@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,23 +32,6 @@
 
 
     <section id="display">
-        <div id="om_spisested">
-            <div class="billede"></div>
-
-            <nav class="nav"></nav>
-
-            <div class="beskrivelse"></div>
-        </div>
-
-        <div class="menu"></div>
-
-        <div class="galleri"></div>
-
-        <div class="book_bord"></div>
-
-        <div class="kontakt"></div>
-
-        <div class="insta_feed"></div>
     </section>
 
     <footer>
@@ -73,52 +57,113 @@
             <a href="http://stromworks.com"></a>
         </div>
     </footer>
-    <!--
+
     <template id="temp_spisested">
-            <article>
-                <h2 data-header></h2>
+        <article>
+            <div id="om">
                 <img data-image src="" alt="">
-            </article>
-        </template>
--->
+                <img data-logo src="" alt="">
+
+                <nav id="single_nav">
+                    <a href="#menu">Menu</a>
+                    <a href="#galleri">Galleri</a>
+                    <a href="#book_bord">Book bord</a>
+                    <a href="#kontakt">Kontakt</a>
+                    <a href="#instagramgalleri">Instagram galleri</a>
+                </nav>
+                <h2 data-overskrift></h2>
+                <p data-description></p>
+            </div>
+
+            <div id="menu">
+                <a data-menu href=""><img src="img/menu_knap.png"></a>
+            </div>
+
+            <div id="galleri">
+                <div data-galleri_img1 class="galleri_img">
+                </div>
+                <div data-galleri_img2 class="galleri_img">
+                </div>
+                <div data-galleri_img3 class="galleri_img">
+                </div>
+                <div data-galleri_img4 class="galleri_img">
+                </div>
+                <div data-galleri_img5 class="galleri_img">
+                </div>
+                <div data-galleri_img6 class="galleri_img">
+                </div>
+            </div>
+
+            <div id="booking">
+                <img src="img/booking.png">
+            </div>
+
+            <div id="kontaktinformationer">
+                <div id="aabningstider">
+                    <h3>Åbningstider</h3>
+                    <p data-aabningstider></p>
+                </div>
+                <div id="kontakt">
+                    <h3>Kontakt</h3>
+                    <p data-kontakt></p>
+                </div>
+                <div id="adresse">
+                    <h3>Adresse</h3>
+                    <p data-adresse></p>
+                </div>
+                <div id="kontrolrapport">
+                    <h3>Kontrolrapport</h3>
+                    <a data-kontrolrapport href=""><p>Se Fødevarestyrelsens smiley-rapporter</p></a>
+                </div>
+            </div>
+
+            <div id="insta_feed">
+
+            </div>
+        </article>
+    </template>
+
+
     <script>
         /*
-                //SPISESTEDER
-                let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
-                let spisesteder = [];
-                let display = document.querySelector("#display");
-                let template = document.querySelector("#temp_spisested");
+                        //SPISESTEDER
+                        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
+                        let spisesteder = [];
+                        let display = document.querySelector("#display");
+                        let template = document.querySelector("#temp_spisested");
 
-                document.addEventListener("DOMContentLoaded", hentJson);
+                        document.addEventListener("DOMContentLoaded", hentJson);
 
-                async function hentJson() {
-                    let dataJson = await fetch(jSonUrl);
-                    spisesteder = await dataJson.json();
-                    //viser arrayet efter json er hentet ind
-                    console.log(spisesteder);
-                    visSpisesteder();
-                }
+                        async function hentJson() {
+                            let dataJson = await fetch(jSonUrl);
+                            spisesteder = await dataJson.json();
+                            //viser arrayet efter json er hentet ind
+                            console.log(spisesteder);
+                            visSpisesteder();
+                        }
 
-                function visSpisesteder() {
-                    spisesteder.forEach(spisested => {
-                        let klon = template.cloneNode(true).content;
-                        console.log(klon);
-                        klon.querySelector("[data-header]").textContent = spisested.title.rendered;
-                        klon.querySelector("[data-image]").src = spisested.acf.billede.url;
-                        klon.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
-                        //console.log(klon.querySelector("[data-image]").alt);
-                        //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+                        function visSpisesteder() {
+                            spisesteder.forEach(spisested => {
+                                let klon = template.cloneNode(true).content;
+                                console.log(klon);
+                                klon.querySelector("[data-header]").textContent = spisested.title.rendered;
+                                klon.querySelector("[data-image]").src = spisested.acf.billede.url;
+                                klon.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
+                                //console.log(klon.querySelector("[data-image]").alt);
+                                //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
 
-                        display.appendChild(klon);
-                    });
-                }
-                */
+                                display.appendChild(klon);
+                            });
+                        }
+                        */
         function toggleMenu() {
             document.querySelector(".burger").classList.toggle("change");
             document.querySelector("nav").classList.toggle("show");
         }
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
+
     </script>
 </body>
+
 </html>
