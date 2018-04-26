@@ -65,7 +65,7 @@
     </footer>
 
     <template id="temp_spisested">
-            <article id="article_spisesteder">
+            <article id="article_spisesteder" class="linktosingle">
                 <h2 data-header></h2>
                 <img data-image src="" alt="">
             </article>
@@ -97,7 +97,9 @@
                 klon.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
                 //console.log(klon.querySelector("[data-image]").alt);
                 //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
-
+                klon.querySelector(".linktosingle").addEventListener("click", () => {
+                    location.href = "single_spisested.html?id=" + spisested.id;
+                });
                 display.appendChild(klon);
             });
         }

@@ -29,36 +29,7 @@
         </div>
     </header>
 
-
-
     <section id="display">
-    </section>
-
-    <footer>
-        <div id="instagram">
-            <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
-        </div>
-        <div id="facebook">
-            <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
-        </div>
-        <div id="kontakt">
-            <h3>Kontakt</h3>
-        </div>
-        <div id="bliv_en_del_af_os_footer">
-            <h3>Bliv en del af os</h3>
-        </div>
-        <div id="login">
-            <h3>Login</h3>
-        </div>
-        <div id="cookie_og_privatlivspolitik">
-            <h3>Cookie- og privatlivspolitik</h3>
-        </div>
-        <div id="stroem">
-            <a href="http://stromworks.com"></a>
-        </div>
-    </footer>
-
-    <template id="temp_spisested">
         <article>
             <div id="om">
                 <img data-image src="" alt="">
@@ -113,7 +84,9 @@
                 </div>
                 <div id="kontrolrapport">
                     <h3>Kontrolrapport</h3>
-                    <a data-kontrolrapport href=""><p>Se Fødevarestyrelsens smiley-rapporter</p></a>
+                    <a data-kontrolrapport href="">
+                        <p>Se Fødevarestyrelsens smiley-rapporter</p>
+                    </a>
                 </div>
             </div>
 
@@ -121,41 +94,87 @@
 
             </div>
         </article>
-    </template>
+    </section>
 
+    <footer>
+        <div id="instagram">
+            <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
+        </div>
+        <div id="facebook">
+            <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
+        </div>
+        <div id="kontakt">
+            <h3>Kontakt</h3>
+        </div>
+        <div id="bliv_en_del_af_os_footer">
+            <h3>Bliv en del af os</h3>
+        </div>
+        <div id="login">
+            <h3>Login</h3>
+        </div>
+        <div id="cookie_og_privatlivspolitik">
+            <h3>Cookie- og privatlivspolitik</h3>
+        </div>
+        <div id="stroem">
+            <a href="http://stromworks.com"></a>
+        </div>
+    </footer>
 
     <script>
-        /*
-                        //SPISESTEDER
-                        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
-                        let spisesteder = [];
-                        let display = document.querySelector("#display");
-                        let template = document.querySelector("#temp_spisested");
+        //SPISESTEDER
+        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
+        let spisested = {};
+        let display = document.querySelector("#display");
 
-                        document.addEventListener("DOMContentLoaded", hentJson);
+        document.addEventListener("DOMContentLoaded", hentJson);
 
-                        async function hentJson() {
-                            let dataJson = await fetch(jSonUrl);
-                            spisesteder = await dataJson.json();
-                            //viser arrayet efter json er hentet ind
-                            console.log(spisesteder);
-                            visSpisesteder();
-                        }
+        async function hentJson() {
+            let dataJson = await fetch(jSonUrl);
+            spisested = await dataJson.json();
+            //viser arrayet efter json er hentet ind
+            console.log(spisested);
+            visSpisested();
+        }
 
-                        function visSpisesteder() {
-                            spisesteder.forEach(spisested => {
-                                let klon = template.cloneNode(true).content;
-                                console.log(klon);
-                                klon.querySelector("[data-header]").textContent = spisested.title.rendered;
-                                klon.querySelector("[data-image]").src = spisested.acf.billede.url;
-                                klon.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
-                                //console.log(klon.querySelector("[data-image]").alt);
-                                //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+        function visSpisested() {
+            document.querySelector("[data-image]").src = spisested.acf.billede.url;
+            document.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
+            document.querySelector("[data-logo]").src = spisested.acf.billede.url;
+            document.querySelector("[data-logo]").alt = "billede af" + spisested.acf.billede.title;
 
-                                display.appendChild(klon);
-                            });
-                        }
-                        */
+            document.querySelector("[data-overskrift]").textContent = spisested.acf.overskrift;
+            // skal evt. rettes til innerHTML i stedet for textContent
+            document.querySelector("[data-description]").textContent = spisested.acf.tekst;
+
+            //spørg om dette
+            document.querySelector("[data-menu]").href = spisested.acf.menu.url;
+            //
+            //Galleribilleder
+            document.querySelector("[data-galleri_img1]").src = spisested.acf.galleri_img1.url;
+            document.querySelector("[data-galleri_img1]").alt = "billede af" + spisested.acf.galleri_img1.title;
+            document.querySelector("[data-galleri_img2]").src = spisested.acf.galleri_img2.url;
+            document.querySelector("[data-galleri_img2]").alt = "billede af" + spisested.acf.galleri_img2.title;
+            document.querySelector("[data-galleri_img3]").src = spisested.acf.galleri_img3.url;
+            document.querySelector("[data-galleri_img3]").alt = "billede af" + spisested.acf.galleri_img3.title;
+            document.querySelector("[data-galleri_img4]").src = spisested.acf.galleri_img4.url;
+            document.querySelector("[data-galleri_img4]").alt = "billede af" + spisested.acf.galleri_img4.title;
+            document.querySelector("[data-galleri_img5]").src = spisested.acf.galleri_img5.url;
+            document.querySelector("[data-galleri_img5]").alt = "billede af" + spisested.acf.galleri_img5.title;
+            document.querySelector("[data-galleri_img6]").src = spisested.acf.galleri_img6.url;
+            document.querySelector("[data-galleri_img6]").alt = "billede af" + spisested.acf.galleri_img6.title;
+
+            //Kontaktinformationer
+            document.querySelector("[data-aabningstider]").innerHTML = spisested.acf.åbningstider;
+            document.querySelector("[data-kontakt]").innerHTML = spisested.acf.kontakt;
+            document.querySelector("[data-adresse]").innerHTML = spisested.acf.adresse;
+            document.querySelector("[data-kontrolrapport]").innerHTML = spisested.acf.kontrolrapport;
+
+
+            //console.log(klon.querySelector("[data-image]").alt);
+            //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+        }
+
+
         function toggleMenu() {
             document.querySelector(".burger").classList.toggle("change");
             document.querySelector("nav").classList.toggle("show");
