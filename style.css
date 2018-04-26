@@ -465,6 +465,20 @@
 
 }
 
+#article_nyhed h2 {
+    color: darkred;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+#article_nyhed h3 {
+    padding: 10px;
+}
+
+#article_nyhed p {
+    padding: 10px;
+}
+
 /* ----- NYHEDER SLUT ----- */
 
 footer {
