@@ -115,7 +115,7 @@
     .bar3 {
         width: 22px;
         height: 3px;
-        background-color: white;
+        background-color: #5e6773;
         margin: 4px 0;
         transition: 0.4s;
     }
@@ -173,7 +173,7 @@
 
     #logo {
         width: 80%;
-        height: 40%;
+        height: 90%;
         background-image: url(logo.png);
         background-size: 100% 100%;
         justify-self: center;
@@ -210,7 +210,19 @@
         justify-self: center;
         align-self: flex-start;
         color: #5e6773;
-        margin-bottom: 15vh;
+        margin-top: 10vh;
+
+    }
+
+    #pil_ned {
+        text-align: center;
+        margin-top: 40vh;
+    }
+
+
+    .fa-angle-down:before {
+        font-size: 3em;
+        color: #5e6773;
 
     }
 
@@ -460,6 +472,20 @@
 #article_nyhed img {
     width: 100%;
 
+}
+
+#article_nyhed h2 {
+    color: darkred;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+
+#article_nyhed h3 {
+    padding: 10px;
+}
+
+#article_nyhed p {
+    padding: 10px;
 }
 
 /* ----- NYHEDER SLUT ----- */
