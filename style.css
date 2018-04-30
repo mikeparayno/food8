@@ -336,7 +336,7 @@ header nav.show {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr 1fr 3fr 1fr;
-    height: 200vh;
+    height: 160vh;
     width: 100vw;
 }
 
@@ -347,7 +347,7 @@ header nav.show {
     grid-row: 2 / 3;
 }
 
-#video {
+/*#video {
     height: 100%;
     width: 100%;
     grid-column: 2 / 3;
@@ -360,13 +360,28 @@ header nav.show {
     height: auto;
     align-self: center;
 
+}*/
+
+#video_om_container {
+    height: auto;
+    float: left;
+    width: 100%;
 }
+
+.video_picture img {
+    width: 75%;
+    padding-left: 12%;
+    padding-bottom: 40%;
+}
+
+
 
 
 #bliv_en_del_af_os {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: #f5f1e6;
+    ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -378,15 +393,15 @@ header nav.show {
 }
 
 .bliv_en_del_af_os_tekst h2 {
-    color: white;
+    color: dimgrey;
 }
 
 .bliv_en_del_af_os_tekst h3 {
-    color: white;
+    color: dimgrey;
 }
 
 .bliv_en_del_af_os_tekst a {
-    color: white;
+    color: dimgrey;
 }
 
 
