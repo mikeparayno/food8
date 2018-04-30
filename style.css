@@ -482,6 +482,7 @@ footer {
     height: 100vh;
     width: 100vw;
     background-color: #34529f;
+    position: absolute;
 
 }
 
@@ -561,11 +562,26 @@ footer h3 {
 
 /*------- SINGLE SPISESTEDER -------*/
 
+#display {
+    position: absolute;
+}
+
+#single_spisesteder {
+    height: auto;
+    width: 100vw;
+    position: absolute;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
 /* INFO */
 
 #single_spisesteder #info {
     height: auto;
     width: 100vw;
+    position: absolute;
+    grid-row: 1 / 2;
 }
 
 #single_spisesteder #info img {
@@ -583,6 +599,7 @@ footer h3 {
 /* MENU */
 
 #single_spisesteder #menu {
+    grid-row: 2 / 3;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -603,6 +620,7 @@ footer h3 {
 /* GALLERI */
 
 #single_spisesteder #galleri {
+    grid-row: 3 / 4;
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -638,6 +656,33 @@ footer h3 {
 #single_spisesteder #galleri .galleri_img6 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+
+/* BOOKING */
+
+#single_spisesteder #booking {
+    grid-row: 4 / 5;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background-color: #f5f1e6;
+}
+
+#single_spisesteder #booking img {
+    height: auto;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+
+/* KONTAKTINFORMATIONER */
+
+#single_spisesteder #kontaktinformationer {
+    grid-row: 4 / 5;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background-color: #f5f1e6;
 }
 
 /*------- SINGLE SPISESTEDER SLUT -------*/
