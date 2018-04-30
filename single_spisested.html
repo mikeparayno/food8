@@ -155,25 +155,25 @@
 
             document.querySelector("[data-overskrift]").textContent = spisested.acf.overskrift;
             console.log("overskrift");
-            // skal evt. rettes til innerHTML i stedet for textContent
-            document.querySelector("[data-description]").textContent = spisested.acf.tekst;
+
+            document.querySelector("[data-description]").innerHTML = spisested.acf.tekst;
 
             //spørg om dette
             document.querySelector("[data-menu]").href = spisested.acf.menu.url;
             //
             //Galleribilleder
-            document.querySelector("[data-galleri_img1]").src = spisested.acf.galleri.url;
-            document.querySelector("[data-galleri_img1]").alt = "billede af" + spisested.acf.galleri.title;
-            /*document.querySelector("[data-galleri_img2]").src = spisested.acf.galleri_img2.url;
-            document.querySelector("[data-galleri_img2]").alt = "billede af" + spisested.acf.galleri_img2.title;
-            document.querySelector("[data-galleri_img3]").src = spisested.acf.galleri_img3.url;
-            document.querySelector("[data-galleri_img3]").alt = "billede af" + spisested.acf.galleri_img3.title;
-            document.querySelector("[data-galleri_img4]").src = spisested.acf.galleri_img4.url;
-            document.querySelector("[data-galleri_img4]").alt = "billede af" + spisested.acf.galleri_img4.title;
-            document.querySelector("[data-galleri_img5]").src = spisested.acf.galleri_img5.url;
-            document.querySelector("[data-galleri_img5]").alt = "billede af" + spisested.acf.galleri_img5.title;
-            document.querySelector("[data-galleri_img6]").src = spisested.acf.galleri_img6.url;
-            document.querySelector("[data-galleri_img6]").alt = "billede af" + spisested.acf.galleri_img6.title;*/
+            document.querySelector("[data-galleri_img1]").src = spisested.acf.galleri1.url;
+            document.querySelector("[data-galleri_img1]").alt = "billede af" + spisested.acf.galleri1.title;
+            document.querySelector("[data-galleri_img2]").src = spisested.acf.galleri2.url;
+            document.querySelector("[data-galleri_img2]").alt = "billede af" + spisested.acf.galleri2.title;
+            document.querySelector("[data-galleri_img3]").src = spisested.acf.galleri3.url;
+            document.querySelector("[data-galleri_img3]").alt = "billede af" + spisested.acf.galleri3.title;
+            document.querySelector("[data-galleri_img4]").src = spisested.acf.galleri4.url;
+            document.querySelector("[data-galleri_img4]").alt = "billede af" + spisested.acf.galleri4.title;
+            document.querySelector("[data-galleri_img5]").src = spisested.acf.galleri5.url;
+            document.querySelector("[data-galleri_img5]").alt = "billede af" + spisested.acf.galleri5.title;
+            document.querySelector("[data-galleri_img6]").src = spisested.acf.galleri6.url;
+            document.querySelector("[data-galleri_img6]").alt = "billede af" + spisested.acf.galleri6.title;
 
             //Kontaktinformationer
             document.querySelector("[data-aabningstider]").innerHTML = spisested.acf.åbningstider;
