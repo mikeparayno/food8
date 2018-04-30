@@ -129,18 +129,18 @@
         let display = document.querySelector("#display");
         */
 
-        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
+        //let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
         let url = new URL(window.location.href);
         let searchParams = new URLSearchParams(url.search);
         let id = searchParams.get("id");
-        let apiURL = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisesteder" + id;
+        let apiURL = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested/" + id;
         let spisested = {};
-
+        console.log(id);
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
-            let dataJson = await fetch(jSonUrl);
+            let dataJson = await fetch(apiURL);
             spisested = await dataJson.json();
             //viser arrayet efter json er hentet ind
             console.log(spisested);
@@ -163,7 +163,7 @@
             //Galleribilleder
             document.querySelector("[data-galleri_img1]").src = spisested.acf.galleri_img1.url;
             document.querySelector("[data-galleri_img1]").alt = "billede af" + spisested.acf.galleri_img1.title;
-            document.querySelector("[data-galleri_img2]").src = spisested.acf.galleri_img2.url;
+            /*document.querySelector("[data-galleri_img2]").src = spisested.acf.galleri_img2.url;
             document.querySelector("[data-galleri_img2]").alt = "billede af" + spisested.acf.galleri_img2.title;
             document.querySelector("[data-galleri_img3]").src = spisested.acf.galleri_img3.url;
             document.querySelector("[data-galleri_img3]").alt = "billede af" + spisested.acf.galleri_img3.title;
@@ -172,7 +172,7 @@
             document.querySelector("[data-galleri_img5]").src = spisested.acf.galleri_img5.url;
             document.querySelector("[data-galleri_img5]").alt = "billede af" + spisested.acf.galleri_img5.title;
             document.querySelector("[data-galleri_img6]").src = spisested.acf.galleri_img6.url;
-            document.querySelector("[data-galleri_img6]").alt = "billede af" + spisested.acf.galleri_img6.title;
+            document.querySelector("[data-galleri_img6]").alt = "billede af" + spisested.acf.galleri_img6.title;*/
 
             //Kontaktinformationer
             document.querySelector("[data-aabningstider]").innerHTML = spisested.acf.åbningstider;
