@@ -564,7 +564,8 @@ footer h3 {
 #display {}
 
 #single_spisesteder,
-#single_barer, #single_raavarer {
+#single_barer,
+#single_raavarer {
     height: auto;
     width: 100vw;
     display: grid;
@@ -575,7 +576,8 @@ footer h3 {
 /* INFO */
 
 #single_spisesteder #info,
-#single_barer #info, #single_raavarer #info {
+#single_barer #info,
+#single_raavarer #info {
     height: auto;
     width: 100vw;
     grid-row: 1 / 2;
@@ -583,23 +585,27 @@ footer h3 {
 }
 
 #single_spisesteder #info img,
-#single_barer #info img {
+#single_barer #info img,
+#single_raavarer #info img {
     height: 50%;
     width: 80%;
 }
 
 #single_spisesteder #info h2,
-#single_barer #info h2 {}
+#single_barer #info h2,
+#single_raavarer #info h2 {}
 
 #single_spisesteder #info p,
-#single_barer #info p {
+#single_barer #info p,
+single_raavarer #info p {
     height: auto;
 }
 
 /* MENU */
 
 #single_spisesteder #menu,
-#single_barer #menu {
+#single_barer #menu,
+#single_raavarer #menu {
     grid-row: 2 / 3;
     height: 100vh;
     width: 100vw;
@@ -607,7 +613,8 @@ footer h3 {
 }
 
 #single_spisesteder #menu a,
-#single_barer #menu a {
+#single_barer #menu a,
+#single_raavarer #menu a {
     justify-self: center;
     align-self: center;
     height: 250px;
@@ -615,7 +622,8 @@ footer h3 {
 }
 
 #single_spisesteder #menu a img,
-#single_barer #menu a img {
+#single_barer #menu a img,
+#single_raavarer #menu a img {
     height: auto;
     width: 100%;
 }
@@ -623,7 +631,8 @@ footer h3 {
 /* GALLERI */
 
 #single_spisesteder #galleri,
-#single_barer #galleri {
+#single_barer #galleri,
+#single_raavarer #galleri {
     grid-row: 3 / 4;
     height: 100vh;
     width: 100vw;
@@ -633,7 +642,8 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img1,
-#single_barer #galleri .galleri_img1 {
+#single_barer #galleri .galleri_img1,
+#single_raavarer #galleri .galleri_img1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     height: 100%;
@@ -641,13 +651,15 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img1 img,
-#single_barer #galleri .galleri_img1 img {
+#single_barer #galleri .galleri_img1 img,
+#single_raavarer #galleri .galleri_img1 img {
     height: 100%;
     width: 100%;
 }
 
 #single_spisesteder #galleri .galleri_img2,
-#single_barer #galleri .galleri_img2 {
+#single_barer #galleri .galleri_img2,
+#single_raavarer #galleri .galleri_img2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     height: 100%;
@@ -655,13 +667,15 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img2 img,
-#single_barer #galleri .galleri_img2 img {
+#single_barer #galleri .galleri_img2 img,
+#single_raavarer #galleri .galleri_img2 img {
     height: 100%;
     width: 100%;
 }
 
 #single_spisesteder #galleri .galleri_img3,
-#single_barer #galleri .galleri_img3 {
+#single_barer #galleri .galleri_img3,
+#single_raavarer #galleri .galleri_img3 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     height: 100%;
@@ -669,13 +683,15 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img3 img,
-#single_barer #galleri .galleri_img3 img {
+#single_barer #galleri .galleri_img3 img,
+#single_raavarer #galleri .galleri_img3 img {
     height: 100%;
     width: 100%;
 }
 
 #single_spisesteder #galleri .galleri_img4,
-#single_barer #galleri .galleri_img4 {
+#single_barer #galleri .galleri_img4,
+#single_raavarer #galleri .galleri_img4 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     height: 100%;
@@ -683,13 +699,15 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img4 img,
-#single_barer #galleri .galleri_img4 img {
+#single_barer #galleri .galleri_img4 img,
+#single_raavarer #galleri .galleri_img4 img {
     height: 100%;
     width: 100%;
 }
 
 #single_spisesteder #galleri .galleri_img5,
-#single_barer #galleri .galleri_img5 {
+#single_barer #galleri .galleri_img5,
+#single_raavarer #galleri .galleri_img5 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     height: 100%;
@@ -697,13 +715,15 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img5 img,
-#single_barer #galleri .galleri_img5 img {
+#single_barer #galleri .galleri_img5 img,
+#single_raavarer #galleri .galleri_img5 img {
     height: 100%;
     width: 100%;
 }
 
 #single_spisesteder #galleri .galleri_img6,
-#single_barer #galleri .galleri_img6 {
+#single_barer #galleri .galleri_img6,
+#single_raavarer #galleri .galleri_img6 {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     height: 100%;
@@ -711,7 +731,8 @@ footer h3 {
 }
 
 #single_spisesteder #galleri .galleri_img6 img,
-#single_barer #galleri .galleri_img6 img {
+#single_barer #galleri .galleri_img6 img,
+#single_raavarer #galleri .galleri_img6 img {
     height: 100%;
     width: 100%;
 }
@@ -719,7 +740,8 @@ footer h3 {
 /* BOOKING */
 
 #single_spisesteder #booking,
-#single_barer #booking {
+#single_barer #booking,
+#single_raavarer #booking {
     grid-row: 4 / 5;
     height: 100vh;
     width: 100vw;
@@ -728,7 +750,8 @@ footer h3 {
 }
 
 #single_spisesteder #booking img,
-#single_barer #booking img {
+#single_barer #booking img,
+#single_raavarer #booking img {
     height: auto;
     width: 80%;
     justify-self: center;
@@ -738,7 +761,8 @@ footer h3 {
 /* KONTAKTINFORMATIONER */
 
 #single_spisesteder #kontaktinformationer,
-#single_barer #kontaktinformationer {
+#single_barer #kontaktinformationer,
+#single_raavarer #kontaktinformationer {
     grid-row: 5 / 6;
     height: 100vh;
     width: 100vw;
@@ -749,29 +773,34 @@ footer h3 {
 }
 
 #single_spisesteder #kontaktinformationer #single_aabningstider,
-#single_barer #kontaktinformationer #single_aabningstider {
+#single_barer #kontaktinformationer #single_aabningstider,
+#single_raavarer #kontaktinformationer #single_aabningstider {
     grid-row: 1 / 2;
 }
 
 #single_spisesteder #kontaktinformationer #single_kontakt,
-#single_barer #kontaktinformationer #single_kontakt {
+#single_barer #kontaktinformationer #single_kontakt,
+#single_raavarer #kontaktinformationer #single_kontakt {
     grid-row: 2 / 3;
 }
 
 #single_spisesteder #kontaktinformationer #single_adresse,
-#single_barer #kontaktinformationer #single_adresse {
+#single_barer #kontaktinformationer #single_adresse,
+#single_raavarer #kontaktinformationer #single_adresse {
     grid-row: 3 / 4;
 }
 
 #single_spisesteder #kontaktinformationer #single_kontrolrapport,
-#single_barer #kontaktinformationer #single_kontrolrapport {
+#single_barer #kontaktinformationer #single_kontrolrapport,
+#single_raavarer #kontaktinformationer #single_kontrolrapport {
     grid-row: 4 / 5;
 }
 
 /* INSTAFEED */
 
 #single_spisesteder #insta_feed,
-#single_barer #insta_feed {
+#single_barer #insta_feed,
+#single_raavarer #insta_feed {
     grid-row: 6 / 7;
     height: 100vh;
     width: 100vw;
@@ -782,14 +811,15 @@ footer h3 {
 }
 
 #single_spisesteder #insta_feed img,
-#single_barer #insta_feed img {
+#single_barer #insta_feed img,
+#single_raavarer #insta_feed img {
     height: auto;
     width: 80%;
 }
 
 
 
-/*------- SINGLE SPISESTEDER SLUT -------*/
+/*------- SINGLE SPISESTEDER, BARER, RAAVARE SLUT -------*/
 
 /*------- STYLING AF FB OG IG IKONER-------*/
 

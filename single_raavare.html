@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +30,7 @@
     </header>
 
     <section id="display">
-        <article id="single_raavare">
+        <article id="single_raavarer">
             <div id="info">
                 <img data-image src="" alt="">
                 <img data-logo src="" alt="">
@@ -135,14 +136,14 @@
         let searchParams = new URLSearchParams(url.search);
         let id = searchParams.get("id");
         let apiURL = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/raavarer/" + id;
-        let bar = {};
+        let raavare = {};
         console.log(id);
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
         async function hentJson() {
             let dataJson = await fetch(apiURL);
-            bar = await dataJson.json();
+            raavare = await dataJson.json();
             //viser arrayet efter json er hentet ind
             console.log(raavare);
             visRaavare();
@@ -151,8 +152,8 @@
         function visRaavare() {
             document.querySelector("[data-image]").src = raavare.acf.billede.url;
             document.querySelector("[data-image]").alt = "billede af" + raavare.acf.billede.title;
-            //document.querySelector("[data-logo]").src = bar.acf.billede.url;
-            //document.querySelector("[data-logo]").alt = "billede af" + bar.acf.billede.title;
+            //document.querySelector("[data-logo]").src = raavare.acf.billede.url;
+            //document.querySelector("[data-logo]").alt = "billede af" + raavare.acf.billede.title;
 
             document.querySelector("[data-overskrift]").textContent = raavare.acf.overskrift;
             console.log("overskrift");
@@ -196,4 +197,5 @@
         document.querySelector("nav").addEventListener("click", toggleMenu);
     </script>
 </body>
+
 </html>
