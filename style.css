@@ -559,12 +559,12 @@ footer h3 {
 
 /*------- SPISESTEDER SLUT-------*/
 
-/*------- SINGLE SPISESTEDER -------*/
+/*------- SINGLE SPISESTEDER, BARER; RÅVARER -------*/
 
 #display {}
 
 #single_spisesteder,
-#single_barer {
+#single_barer, #single_raavarer {
     height: auto;
     width: 100vw;
     display: grid;
@@ -575,7 +575,7 @@ footer h3 {
 /* INFO */
 
 #single_spisesteder #info,
-#single_barer #info {
+#single_barer #info, #single_raavarer #info {
     height: auto;
     width: 100vw;
     grid-row: 1 / 2;
