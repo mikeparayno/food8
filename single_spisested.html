@@ -132,15 +132,6 @@
     </footer>
 
     <script>
-        //SPISESTEDER
-        /*
-        OPRINDELIG FRA I TORSDAGS
-        let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
-        let spisested = {};
-        let display = document.querySelector("#display");
-        */
-
-        //let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/spisested";
         let url = new URL(window.location.href);
         let searchParams = new URLSearchParams(url.search);
         let id = searchParams.get("id");
