@@ -419,7 +419,7 @@ header nav.show {
     width: 100vw;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-color: #f5f1e6;
+    background-color: #e9cfd0;
     align-items: center;
     justify-items: center;
 }
@@ -446,7 +446,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-color: cadetblue;
+    background-color: #a4554f;
 }
 
 #food_aid_raavarer a {
@@ -458,6 +458,7 @@ header nav.show {
 #food_aid_raavarer a p {
     align-self: center;
     justify-self: center;
+    color: #e9cfd0;
 }
 
 #food_aid_barer {
@@ -465,7 +466,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    background-color: cadetblue;
+    background-color: #a4554f;
 }
 
 #food_aid_barer a {
@@ -477,6 +478,7 @@ header nav.show {
 #food_aid_barer a p {
     align-self: center;
     justify-self: center;
+    color: #e9cfd0;
 }
 
 #food_aid_guides {
@@ -484,7 +486,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-color: cadetblue;
+    background-color: #a4554f;
 }
 
 #food_aid_guides a {
@@ -496,6 +498,7 @@ header nav.show {
 #food_aid_guides a p {
     align-self: center;
     justify-self: center;
+    color: #e9cfd0;
 }
 
 
@@ -505,12 +508,22 @@ header nav.show {
 
 /* ----- NYHEDER ----- */
 
-#article_nyhed,
-#article_guide {
+#article_nyhed {
     width: 80vw;
     height: auto;
     margin: 50px 10vw;
     background-color: #f5f1e6;
+}
+
+#guides_baggrund {
+    background-color: #e9cfd0;
+}
+
+#article_guide {
+    width: 80vw;
+    height: auto;
+    margin: 50px 10vw;
+    background-color: #a4554f;
 }
 
 #article_nyhed #billede_nyhed,
@@ -618,12 +631,49 @@ footer h3 {
 
 /*------- SPISESTEDER -------*/
 
-#article_spisesteder {
-    width: 100vw;
+#spisesteder {
+    width: 100%;
+    display: grid;
 }
 
-#article_spisesteder img {
+#spisesteder_tekst {
+    height: 20vh;
+    margin-top: 10%;
     width: 100%;
+    display: grid;
+}
+
+#spisesteder_tekst p {
+    height: auto;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+#spisesteder #display {
+    margin-bottom: 10vh;
+}
+
+#article_spisesteder {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5vh;
+
+}
+
+#article_spisesteder .billede_spisesteder {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#article_spisesteder .billede_spisesteder img {
+    width: 100%;
+    height: auto;
 
 }
 
