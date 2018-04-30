@@ -12,15 +12,19 @@ body {
 h1 {}
 
 h2 {
+    font-size: 1.3em;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
 }
 
-p {}
+p {
+    font-size: 0.9em;
+}
 
 a {
     font-family: 'Open Sans', sans-serif;
@@ -416,51 +420,82 @@ header nav.show {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     background-color: #f5f1e6;
+    align-items: center;
+    justify-items: center;
 }
 
 #food_aid_tekst {
-    align-self: center;
-    justify-self: center;
-    height: 100%;
+    height: 90%;
+    margin-top: 10%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    display: grid;
+}
+
+#food_aid_tekst p {
+    height: auto;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 #food_aid_raavarer {
-    align-self: center;
-    justify-self: center;
-
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background-color: cadetblue;
+}
 
-    background-color: antiquewhite;
+#food_aid_raavarer a {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
 
+#food_aid_raavarer a p {
+    align-self: center;
+    justify-self: center;
 }
 
 #food_aid_barer {
-    align-self: center;
-    justify-self: center;
-
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    background-color: cadetblue;
+}
 
+#food_aid_barer a {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+#food_aid_barer a p {
+    align-self: center;
+    justify-self: center;
 }
 
 #food_aid_guides {
-    align-self: center;
-    justify-self: center;
-
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-color: antiquewhite;
+    background-color: cadetblue;
+}
 
+#food_aid_guides a {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+#food_aid_guides a p {
+    align-self: center;
+    justify-self: center;
 }
 
 
@@ -470,26 +505,41 @@ header nav.show {
 
 /* ----- NYHEDER ----- */
 
-#article_nyhed {
-    width: 100vw;
+#article_nyhed,
+#article_guide {
+    width: 80vw;
+    height: auto;
+    margin: 50px 10vw;
+    background-color: #f5f1e6;
 }
 
-#article_nyhed img {
+#article_nyhed #billede_nyhed,
+#article_guide #billede_guide {
     width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+#article_nyhed #billede_nyhed img,
+#article_guide #billede_guide img {
+    width: 100%;
+    height: auto;
 
 }
 
-#article_nyhed h2 {
-    color: darkred;
+#article_nyhed h2,
+#article_guide h2 {
     padding: 50px 20px 20px 20px;
     text-align: center;
 }
 
-#article_nyhed h3 {
+#article_nyhed h3,
+#article_guide h3 {
     padding: 10px;
 }
 
-#article_nyhed p {
+#article_nyhed p,
+#article_guide p {
     padding: 10px;
 }
 
