@@ -30,15 +30,15 @@
         </div>
     </header>
 
-    <section id="display">
+    <section id="barer">
+        <h3>Her kan du se de forskellige barer, som er tilknyttet Food8</h3>
+        <section id="display">
+        </section>
     </section>
 
     <section id="nyhedsbrev">
         <div class="nyhedsbrev_billede"></div>
-        <div class="nyhedsbrev_tekst">
-            <h2>Tilmeld nyhedsbrev</h2>
-            <p>Her kan du tilmelde vores nyhedsbrev</p>
-        </div>
+        <div class="nyhedsbrev_tekst"></div>
     </section>
 
     <footer>
@@ -66,12 +66,12 @@
     </footer>
 
     <template id="temp_bar">
-    <article>
-      <h2 data-header></h2>
-       <img data-image src="" alt="">
-        <p data-description></p>
-    </article>
-    </template>
+            <article id="article_barer" class="linktosingle">
+                <h2 data-header></h2>
+                <img data-image src="" alt="">
+            </article>
+        </template>
+
     <script>
         //BARER
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/barer";
@@ -83,52 +83,32 @@
 
         async function hentJson() {
             let dataJson = await fetch(jSonUrl);
-            inspiration = await dataJson.json();
+            barer = await dataJson.json();
             //viser arrayet efter json er hentet ind
-            console.log(inspiration);
-            visInspiration();
+            console.log(barer);
+            visBarer();
         }
 
-        function visInspiration() {
-            inspiration.forEach(inspi => {
-                        console.log(inspi);
-                        let klon = template.cloneNode(true).content;
-                        console.log(klon);
-                        klon.querySelector("[data-header]").textContent = inspi.title.rendered;
-                        klon.querySelector("[data-image]").src = inspi.acf.billede.url;
-                        klon.querySelector("[data-image]").alt = "billede af" + inspi.acf.billede.title;
-                        klon.querySelector("[data-description]").innerHTML = inspi.content.rendered;
-                        barer = await dataJson.json();
-                        //viser arrayet efter json er hentet ind
-                        console.log(barer);
-                        visBarer();
-                    }
+        function visBarer() {
+            barer.forEach(bar => {
+                let klon = template.cloneNode(true).content;
+                console.log(klon);
+                klon.querySelector("[data-header]").textContent = bar.title.rendered;
+                klon.querySelector("[data-image]").src = bar.acf.billede.url;
+                klon.querySelector("[data-image]").alt = "billede af" + bar.acf.billede.title;
+                klon.querySelector(".linktosingle").addEventListener("click", () => {
+                    location.href = "single_bar.html?id=" + bar.id;
+                });
+                display.appendChild(klon);
+            });
+        }
 
-                    function visBarer() {
-                        barer.forEach(bar => {
-                            console.log(bar);
-                            let klon = template.cloneNode(true).content;
-                            console.log(klon);
-                            klon.querySelector("[data-header]").textContent = bar.title.rendered;
-                            klon.querySelector("[data-image]").src = bar.acf.billede.url;
-                            klon.querySelector("[data-image]").alt = "billede af" + bar.acf.billede.title;
-                            //console.log(klon.querySelector("[data-image]").alt);
-                            //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
-                            >>>
-                            >>>
-                            >
-                            origin / master
-
-                            display.appendChild(klon);
-                        });
-                    }
-
-                    function toggleMenu() {
-                        document.querySelector(".burger").classList.toggle("change");
-                        document.querySelector("nav").classList.toggle("show");
-                    }
-
-                    document.querySelector(".burger").addEventListener("click", toggleMenu); document.querySelector("nav").addEventListener("click", toggleMenu);
+        function toggleMenu() {
+            document.querySelector(".burger").classList.toggle("change");
+            document.querySelector("nav").classList.toggle("show");
+        }
+        document.querySelector(".burger").addEventListener("click", toggleMenu);
+        document.querySelector("nav").addEventListener("click", toggleMenu);
     </script>
 </body>
 
