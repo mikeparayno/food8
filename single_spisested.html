@@ -82,7 +82,12 @@
                 </div>
                 <div id="kontakt">
                     <h3>Kontakt</h3>
-                    <p data-kontakt></p>
+                    <div id="telefonnummer">
+                        <p data-tlf></p>
+                    </div>
+                    <div id="email">
+                        <p data-email></p>
+                    </div>
                 </div>
                 <div id="adresse">
                     <h3>Adresse</h3>
@@ -183,7 +188,8 @@
 
             //Kontaktinformationer
             document.querySelector("[data-aabningstider]").innerHTML = spisested.acf.åbningstider;
-            document.querySelector("[data-kontakt]").innerHTML = spisested.acf.kontakt;
+            document.querySelector("[data-tlf]").innerHTML = spisested.acf.telefonnummer;
+            document.querySelector("[data-email]").innerHTML = spisested.acf.email;
             document.querySelector("[data-adresse]").innerHTML = spisested.acf.adresse;
             document.querySelector("[data-kontrolrapport]").innerHTML = spisested.acf.kontrolrapport;
 
