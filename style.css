@@ -629,21 +629,27 @@ footer h3 {
 
 }
 
-/*------- SPISESTEDER -------*/
+/*------- SPISESTEDER, BARER, RÅVARER -------*/
 
-#spisesteder {
+#spisesteder,
+#barer,
+#raavarer {
     width: 100%;
     display: grid;
 }
 
-#spisesteder_tekst {
+#spisesteder_tekst,
+#barer_tekst,
+#raavarer_tekst {
     height: 20vh;
     margin-top: 10%;
     width: 100%;
     display: grid;
 }
 
-#spisesteder_tekst p {
+#spisesteder_tekst p,
+#barer_tekst p,
+#raavarer_tekst p {
     height: auto;
     width: 90%;
     align-self: center;
@@ -651,18 +657,24 @@ footer h3 {
     text-align: center;
 }
 
-#spisesteder #display {
+#spisesteder #display,
+#barer #display,
+#raavarer #display {
     margin-bottom: 10vh;
 }
 
-#article_spisesteder {
+#article_spisesteder,
+#article_barer,
+#article_raavarer {
     width: 100vw;
     height: auto;
     margin-bottom: 5vh;
 
 }
 
-#article_spisesteder .billede_spisesteder {
+#article_spisesteder .billede_spisesteder,
+#article_barer .billede_barer,
+#article_raavarer .billede_raavarer {
     width: 100%;
     height: 150px;
     overflow: hidden;
@@ -671,13 +683,15 @@ footer h3 {
     align-content: center;
 }
 
-#article_spisesteder .billede_spisesteder img {
+#article_spisesteder .billede_spisesteder img,
+#article_barer .billede_barer img,
+#article_raavarer .billede_raavarer img {
     width: 100%;
     height: auto;
 
 }
 
-/*------- SPISESTEDER SLUT-------*/
+/*------- SPISESTEDER, BARER, RÅVARER SLUT-------*/
 
 /*------- SINGLE SPISESTEDER, BARER; RÅVARER -------*/
 
@@ -689,7 +703,6 @@ footer h3 {
     height: auto;
     width: 100vw;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
 
 }
 
@@ -700,25 +713,37 @@ footer h3 {
 #single_raavarer #info {
     height: auto;
     width: 100vw;
-    grid-row: 1 / 2;
     justify-self: center;
+}
+
+#single_spisesteder #info #single_nav,
+#single_barer #info #single_nav,
+#single_raavarer #info #single_nav {
+    width: 90%;
+    padding: 0 5% 20px 5%;
+    display: grid;
+    grid-gap: 10px;
 }
 
 #single_spisesteder #info img,
 #single_barer #info img,
 #single_raavarer #info img {
     height: 50%;
-    width: 80%;
+    width: 100%;
 }
 
 #single_spisesteder #info h2,
 #single_barer #info h2,
-#single_raavarer #info h2 {}
+#single_raavarer #info h2 {
+    width: 90%;
+    padding: 0 5%;
+}
 
 #single_spisesteder #info p,
 #single_barer #info p,
 single_raavarer #info p {
-    height: auto;
+    width: 90%;
+    padding: 0 5%;
 }
 
 /* MENU */
@@ -726,9 +751,10 @@ single_raavarer #info p {
 #single_spisesteder #menu,
 #single_barer #menu,
 #single_raavarer #menu {
-    grid-row: 2 / 3;
-    height: 100vh;
+    height: auto;
     width: 100vw;
+    margin-top: 30%;
+    margin-bottom: 30%;
     display: grid;
 }
 
@@ -753,12 +779,14 @@ single_raavarer #info p {
 #single_spisesteder #galleri,
 #single_barer #galleri,
 #single_raavarer #galleri {
-    grid-row: 3 / 4;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: 90vw;
+    margin: 0 5vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
 }
 
 #single_spisesteder #galleri .galleri_img1,
@@ -862,11 +890,11 @@ single_raavarer #info p {
 #single_spisesteder #booking,
 #single_barer #booking,
 #single_raavarer #booking {
-    grid-row: 4 / 5;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     display: grid;
-    background-color: #f5f1e6;
+    margin-top: 30%;
+    margin-bottom: 30%;
 }
 
 #single_spisesteder #booking img,
@@ -883,13 +911,12 @@ single_raavarer #info p {
 #single_spisesteder #kontaktinformationer,
 #single_barer #kontaktinformationer,
 #single_raavarer #kontaktinformationer {
-    grid-row: 5 / 6;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 #single_spisesteder #kontaktinformationer #single_aabningstider,
@@ -921,10 +948,10 @@ single_raavarer #info p {
 #single_spisesteder #insta_feed,
 #single_barer #insta_feed,
 #single_raavarer #insta_feed {
-    grid-row: 6 / 7;
-    height: 100vh;
+    height: auto;
     width: 100vw;
-    background-color: #f5f1e6;
+    margin-top: 30%;
+    margin-bottom: 30%;
     display: grid;
     align-items: center;
     justify-items: center;
