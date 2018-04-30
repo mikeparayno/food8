@@ -369,8 +369,8 @@ header nav.show {
 }
 
 .video_picture img {
-    width: 50%;
-    padding-left: 25%;
+    width: 75%;
+    padding-left: 12%;
     padding-bottom: 40%;
 }
 
@@ -578,7 +578,8 @@ footer h3 {
 #display {}
 
 #single_spisesteder,
-#single_barer, #single_raavarer {
+#single_barer,
+#single_raavarer {
     height: auto;
     width: 100vw;
     display: grid;
@@ -589,7 +590,8 @@ footer h3 {
 /* INFO */
 
 #single_spisesteder #info,
-#single_barer #info, #single_raavarer #info {
+#single_barer #info,
+#single_raavarer #info {
     height: auto;
     width: 100vw;
     grid-row: 1 / 2;
