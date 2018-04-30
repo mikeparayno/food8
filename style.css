@@ -421,14 +421,10 @@ header nav.show {
 #food_aid_tekst {
     align-self: center;
     justify-self: center;
-
     height: 100%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    text-align: center;
-    padding-top: 100px;
-
 }
 
 #food_aid_raavarer {
@@ -439,9 +435,8 @@ header nav.show {
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    text-align: center;
 
-    background-color: #f5f1e6;
+    background-color: antiquewhite;
 
 }
 
@@ -453,7 +448,6 @@ header nav.show {
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    text-align: center;
 
 }
 
@@ -465,7 +459,7 @@ header nav.show {
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-color: #f5f1e6;
+    background-color: antiquewhite;
 
 }
 
