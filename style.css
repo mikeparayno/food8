@@ -380,7 +380,8 @@ header nav.show {
 #bliv_en_del_af_os {
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: #f5f1e6;
+    ;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -392,15 +393,15 @@ header nav.show {
 }
 
 .bliv_en_del_af_os_tekst h2 {
-    color: white;
+    color: dimgrey;
 }
 
 .bliv_en_del_af_os_tekst h3 {
-    color: white;
+    color: dimgrey;
 }
 
 .bliv_en_del_af_os_tekst a {
-    color: white;
+    color: dimgrey;
 }
 
 
