@@ -209,8 +209,9 @@ header nav.show {
 #forside_tekst {
     justify-self: center;
     align-self: flex-start;
+    text-align: center;
     color: #5e6773;
-
+    padding: 0 5vh;
 }
 
 #pil_ned {
@@ -230,39 +231,38 @@ header nav.show {
 /* kort om */
 
 #food8 {
-    height: 90vh;
+    height: auto;
     width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 1fr;
 
 }
 
 #foodaid {
-    height: 90vh;
+    height: auto;
     width: 100vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     background-color: rgb(225, 160, 173, 0.5);
+    display: grid;
 
 }
 
 #food8 .food8_billede,
 #foodaid .foodaid_billede {
-    grid-row: 1 / 2;
-    height: 50%;
     width: 100%;
-    position: absolute;
     display: grid;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 #food8 .food8_billede .logo1,
 #foodaid .foodaid_billede .logo2 {
     width: 50%;
     height: auto;
-    position: absolute;
+    position: relative;
     z-index: 2;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 
 }
 
@@ -276,9 +276,12 @@ header nav.show {
 #foodaid .foodaid_billede .bagg_img {
     width: 350px;
     height: 350px;
-    position: absolute;
-    z-index: 1;
     overflow: hidden;
+    justify-self: center;
+    align-self: center;
+    padding: 50px 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 
@@ -302,11 +305,11 @@ header nav.show {
 
 .food8_tekst,
 .foodaid_tekst {
-    grid-row: 2 / 3;
+    height: auto;
+    width: 80vw;
     justify-self: center;
     align-self: center;
-    height: auto;
-    width: 80%;
+    padding-bottom: 50px;
 }
 
 .food8_tekst p,
@@ -726,6 +729,25 @@ footer h3 {
 
 }
 
+#text_box {
+    padding: 20px;
+}
+
+#text_box p {
+    text-align: center;
+
+    font-size: 1.5em;
+}
+
+
+#map {
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    padding-bottom: 20px;
+}
+
+
 /*------- SPISESTEDER, BARER, RÅVARER SLUT-------*/
 
 /*------- SINGLE SPISESTEDER, BARER; RÅVARER -------*/
@@ -1038,3 +1060,6 @@ single_raavarer #info p {
 .fa-instagram:before {
     font-size: 2em;
 }
+
+
+/*------- GOOGLE MAPS -------*/

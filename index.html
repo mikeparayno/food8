@@ -39,7 +39,7 @@
                 <img src="logo.png" alt="Food8 logo">
             </div>
             <div id="forside_tekst">
-                <em><h2>Din virtuelle food court</h2></em>
+                <em><h2>Velkommen til dit virtuelle food court</h2></em>
             </div>
         </div>
     </section>
@@ -122,22 +122,21 @@
         </div>
     </footer>
     <script>
-        $(window).scroll(function() {
+        //$(window).scroll(function() {
 
-            $(".hidden").each(function(i) {
+        //$(".hidden").each(function(i) {
 
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
+        //var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        //var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-                if (bottom_of_window > bottom_of_object) {
+        //if (bottom_of_window > bottom_of_object) {
 
-                    $(this).animate({
-                        'opacity': '1'
-                    }, 2000);
-                }
-            });
-
-        });
+        //$(this).animate({
+        //'opacity': '1'
+        //}, 2000);
+        //}
+        //});
+        //});
 
         function toggleMenu() {
             document.querySelector(".burger").classList.toggle("change");
