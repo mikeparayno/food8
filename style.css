@@ -727,6 +727,17 @@ footer h3 {
 
 }
 
+#text_box {
+    padding: 20px;
+}
+
+#text_box p {
+    text-align: center;
+
+    font-size: 1.5em;
+}
+
+
 #map {
     width: 100vw;
     height: 50vh;
