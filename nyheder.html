@@ -102,7 +102,6 @@
         //FILTERKNAPPER
         let filtertype;
         let filternavn = "Alle";
-
         let filterknapper = document.querySelectorAll("#filtrering button").forEach(knap => {
             knap.addEventListener("click", (e) => {
                 filtertype = e.target.className;
@@ -110,11 +109,7 @@
                 console.log("nnnnnnn", filtertype, filternavn);
                 hentJson();
             });
-
         });
-
-
-
 
         //NYHEDER
         async function hentJson() {
@@ -125,8 +120,26 @@
             lavFiltrering();
         }
 
- function lavFiltrering() { //document.querySelector("#overskrift").textContent = filternavn; //console.log(filtertype, filternavn); /*if (filternavn != "Alle") { console.log("før", nyheder); nyheder = nyheder.filter(nyhed => nyhed.acf.tags == filternavn); console.log("efter", nyheder); }*/ // filtertypen indeholder tagsene, som viser sig at være en array! Derfor laver vi følgende if-sætning if (filternavn != "Alle") { let arrr = []; nyheder.forEach(nyhed => { nyhed.acf[filtertype].forEach(t => { if (t == filternavn) { arrr.push(nyhed); console.log(arrr); } }); }); nyheder = arrr; console.log("efter", nyheder); } visNyheder(); }
+        //FILTRERING
+        function lavFiltrering() { // filtertypen indeholder tagsene, som viser sig at være en array! Derfor laver vi følgende if-sætning:
 
+            if (filternavn != "Alle") {
+                let arrr = [];
+                nyheder.forEach(nyhed => {
+                    nyhed.acf[filtertype].forEach(t => {
+                        if (t == filternavn) {
+                            arrr.push(nyhed);
+                            console.log(arrr);
+                        }
+                    });
+                });
+                nyheder = arrr;
+                console.log("efter", nyheder);
+            }
+            visNyheder();
+        }
+
+        //NYHEDER
         function visNyheder() {
             display.innerHTML = "";
             nyheder.forEach(nyhed => {
@@ -149,6 +162,7 @@
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
 
+        //DOM VISES
         document.addEventListener("DOMContentLoaded", hentJson);
     </script>
 
