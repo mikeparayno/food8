@@ -281,6 +281,18 @@ header nav.show {
     overflow: hidden;
 }
 
+
+.overlay .hidden {
+    opacity: 1;
+    background-color: white;
+    z-index: 2;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+
+}
+
+
 .food8_billede .bagg_img img,
 .foodaid_billede .bagg_img img {
     width: auto;
@@ -715,6 +727,25 @@ footer h3 {
 
 }
 
+#text_box {
+    padding: 20px;
+}
+
+#text_box p {
+    text-align: center;
+
+    font-size: 1.5em;
+}
+
+
+#map {
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    padding-bottom: 20px;
+}
+
+
 /*------- SPISESTEDER, BARER, RÅVARER SLUT-------*/
 
 /*------- SINGLE SPISESTEDER, BARER; RÅVARER -------*/
@@ -1027,3 +1058,6 @@ single_raavarer #info p {
 .fa-instagram:before {
     font-size: 2em;
 }
+
+
+/*------- GOOGLE MAPS -------*/
