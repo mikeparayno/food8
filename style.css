@@ -446,7 +446,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-color: #a4554f;
+    background-color: #d9bdbe;
 }
 
 #food_aid_raavarer a {
@@ -458,7 +458,7 @@ header nav.show {
 #food_aid_raavarer a p {
     align-self: center;
     justify-self: center;
-    color: #e9cfd0;
+    color: #5e6773;
 }
 
 #food_aid_barer {
@@ -466,7 +466,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    background-color: #a4554f;
+    background-color: #d9bdbe;
 }
 
 #food_aid_barer a {
@@ -478,7 +478,7 @@ header nav.show {
 #food_aid_barer a p {
     align-self: center;
     justify-self: center;
-    color: #e9cfd0;
+    color: #5e6773;
 }
 
 #food_aid_guides {
@@ -486,7 +486,7 @@ header nav.show {
     width: 80%;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    background-color: #a4554f;
+    background-color: #d9bdbe;
 }
 
 #food_aid_guides a {
@@ -498,7 +498,7 @@ header nav.show {
 #food_aid_guides a p {
     align-self: center;
     justify-self: center;
-    color: #e9cfd0;
+    color: #5e6773;
 }
 
 
@@ -523,7 +523,7 @@ header nav.show {
     width: 80vw;
     height: auto;
     margin: 50px 10vw;
-    background-color: #a4554f;
+    background-color: #d9bdbe;
 }
 
 #article_nyhed #billede_nyhed,
