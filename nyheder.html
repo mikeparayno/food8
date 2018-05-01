@@ -103,14 +103,12 @@
         let filtertype;
         let filternavn = "Alle";
 
-        let filterknapper = document.querySelectorAll("#filtrering button");
-        filterknapper.forEach(knap => {
+        let filterknapper = document.querySelectorAll("#filtrering button").forEach(knap => {
             knap.addEventListener("click", (e) => {
                 filtertype = e.target.className;
                 filternavn = e.target.textContent;
-
-                //console.log("knapper", filtertype);
-                lavFiltrering();
+                console.log("nnnnnnn", filtertype, filternavn);
+                hentJson();
             });
 
         });
@@ -123,34 +121,20 @@
             let dataJson = await fetch(jSonUrl);
             nyheder = await dataJson.json();
             //viser arrayet efter json er hentet ind
-            console.log("før", nyheder);
-            //visNyheder();
             //visNyheder();
             lavFiltrering();
         }
 
-        function lavFiltrering() {
-            //document.querySelector("#overskrift").textContent = filternavn;
-            console.log(filtertype, filternavn);
-            if (filternavn != "Alle") {
-                nyheder = nyheder.filter(nyhed => nyhed.acf[filtertype] == filternavn);
-                console.log(nyheder);
-            }
-            console.log("efter", nyheder);
-            visNyheder();
-        }
+ function lavFiltrering() { //document.querySelector("#overskrift").textContent = filternavn; //console.log(filtertype, filternavn); /*if (filternavn != "Alle") { console.log("før", nyheder); nyheder = nyheder.filter(nyhed => nyhed.acf.tags == filternavn); console.log("efter", nyheder); }*/ // filtertypen indeholder tagsene, som viser sig at være en array! Derfor laver vi følgende if-sætning if (filternavn != "Alle") { let arrr = []; nyheder.forEach(nyhed => { nyhed.acf[filtertype].forEach(t => { if (t == filternavn) { arrr.push(nyhed); console.log(arrr); } }); }); nyheder = arrr; console.log("efter", nyheder); } visNyheder(); }
 
         function visNyheder() {
+            display.innerHTML = "";
             nyheder.forEach(nyhed => {
-                //console.log(nyhed);
-                //xconsole.log(nyhed.acf.tags);
                 let klon = template.cloneNode(true).content;
-                //console.log(klon);
                 klon.querySelector("[data-header]").textContent = nyhed.title.rendered;
                 klon.querySelector("[data-image]").src = nyhed.acf.billede.url;
                 klon.querySelector("[data-image]").alt = "billede af" + nyhed.acf.billede.title;
                 klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
-                //console.log(klon.querySelector("[data-image]").alt);
                 //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
 
                 display.appendChild(klon);
