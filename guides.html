@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id="guides_baggrund">
     <header>
         <div class="menu">
             <button class="burger">
@@ -33,20 +33,30 @@
     </section>
 
     <section id="nyhedsbrev">
-        <div class="nyhedsbrev_billede"></div>
-        <div class="nyhedsbrev_tekst">
-            <h2>Tilmeld nyhedsbrev</h2>
-            <p>Her kan du tilmelde vores nyhedsbrev</p>
+        <div class="nyhedsbrev_billede">
+
         </div>
+        <div class="nyhedsbrev_tekst">
+            <h2>Nyhedsbrev</h2>
+
+            <p>Tilmeld dig vores nyhedsbrev og få ugentlige guides og nyheder fra Food8 samt 10% på dit første besøg hos en af vores restauranter</p>
+
+        </div>
+
+
     </section>
 
+
     <footer>
-        <div id="instagram">
+       <div id="sociale_medier">
+          <div id="instagram">
             <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
         </div>
         <div id="facebook">
             <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
         </div>
+
+       </div>
         <div id="kontakt">
             <h3>Kontakt</h3>
         </div>
@@ -60,23 +70,28 @@
             <h3>Cookie- og privatlivspolitik</h3>
         </div>
         <div id="stroem">
-            <a href="http://stromworks.com"></a>
+            <a href="http://stromworks.com">
+            <img src="stroem_white.png" alt="strøm">
+            </a>
         </div>
     </footer>
 
-    <template>
-    <article>
+    <template id="temp_guide">
+    <article id="article_guide">
       <h2 data-header></h2>
-       <img data-image src="" alt="">
+        <div id="billede_guide">
+            <img data-image src="" alt="">
+        </div>
         <p data-description></p>
     </article>
     </template>
+
     <script>
         //GUIDES
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/guide";
         let guides = [];
         let display = document.querySelector("#display");
-        let template = document.querySelector("template");
+        let template = document.querySelector("#temp_guide");
 
         document.addEventListener("DOMContentLoaded", hentJson);
 
@@ -103,12 +118,13 @@
         }
 
         function toggleMenu() {
-        document.querySelector(".burger").classList.toggle("change");
-        document.querySelector("nav").classList.toggle("show");
+            document.querySelector(".burger").classList.toggle("change");
+            document.querySelector("nav").classList.toggle("show");
         }
 
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
+
     </script>
 </body>
 
