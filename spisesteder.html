@@ -38,6 +38,9 @@
 
     </section>
 
+
+   <div id="map"></div>
+
     <section id="nyhedsbrev">
         <div class="nyhedsbrev_billede">
 
@@ -48,9 +51,9 @@
             <p>Tilmeld dig vores nyhedsbrev og få ugentlige guides og nyheder fra Food8.</p>
 
         </div>
-
-
     </section>
+
+
 
 
     <footer>
@@ -130,6 +133,96 @@
         }
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
+
+
+        let map;
+
+        let fat_pike = {
+            lat: 55.666611,
+            lng: 12.579911
+        };
+
+        let noho = {
+            lat: 55.667643,
+            lng: 12.558010
+        }
+
+
+        let fleisch = {
+            lat: 55.669064,
+            lng: 12.558715
+        }
+
+        let metier = {
+            lat: 55.695038,
+            lng: 12.569340
+        }
+
+        let spisehuset = {
+            lat: 55.669184,
+            lng: 12.560794
+        }
+
+        let un_mercato = {
+            lat: 55.683928,
+            lng: 12.570082
+        }
+
+
+        function initMap() {
+            map = new
+            google.maps.Map(document.querySelector("#map"), {
+                center: un_mercato,
+                zoom: 12
+            });
+
+         let marker = new google.maps.Marker({
+             position: fat_pike,
+             title: "The Fat Pike",
+             map: map
+         });
+
+
+        let marker1 = new google.maps.Marker({
+            position: noho,
+            title: "NOHO",
+            map: map
+        });
+
+        let marker2 = new google.maps.Marker({
+            position: fleisch,
+            title: "Fleisch",
+            map: map
+        });
+
+        let marker3 = new google.maps.Marker({
+            position: metier,
+            title: "Metier",
+            map: map
+        });
+
+        let marker4 = new google.maps.Marker({
+            position: spisehuset,
+            title: "spisehuset",
+            map: map
+        });
+
+        let marker5 = new google.maps.Marker({
+            position: un_mercato,
+            title: "Un Mercato",
+            map: map
+        });
+
+
+        }
+
+
+
+
     </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdX9iybGMQb1ezX_Db90nLHWAg7AMwGE4&callback=initMap" async defer>
+    </script>
+
 </body>
 </html>

@@ -715,6 +715,14 @@ footer h3 {
 
 }
 
+#map {
+    width: 100vw;
+    height: 50vh;
+    background-color: red;
+    padding-bottom: 20px;
+}
+
+
 /*------- SPISESTEDER, BARER, RÅVARER SLUT-------*/
 
 /*------- SINGLE SPISESTEDER, BARER; RÅVARER -------*/
@@ -1027,3 +1035,6 @@ single_raavarer #info p {
 .fa-instagram:before {
     font-size: 2em;
 }
+
+
+/*------- GOOGLE MAPS -------*/
