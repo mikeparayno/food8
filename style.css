@@ -24,15 +24,15 @@ h3 {
 
 p {
     font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
+
 }
 
 /* ----- NAVIGATION ----- */
@@ -57,12 +57,15 @@ header nav.show {
 }
 
 #home_logo {
-    background-image: url(logo.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
     width: 200px;
-    height: 100px;
+    height: auto;
     justify-self: center;
+
+}
+
+#home_logo img {
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -75,12 +78,20 @@ header nav.show {
     justify-content: center;
     align-content: center;
     z-index: 3;
+
 }
 
 #menu_open a {
     margin-bottom: 10vh;
     text-align: center;
     z-index: 3;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #354150;
 }
 
 /* rotate forst bar */
@@ -125,6 +136,37 @@ header nav.show {
     background-color: #5e6773;
     margin: 4px 0;
     transition: 0.4s;
+}
+
+/* OVERSKRIFT MENU */
+
+#overskrift {
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #5e6773;
+    padding-left: 25px;
+    padding-top: 16px;
+    position: absolute;
+}
+
+/* FILTRERING KNAPPER */
+
+section#filtrering {
+    padding-left: 20px;
+    padding-top: 60px;
+
+}
+
+section#filtrering button {
+    height: 30px;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-color: #5e6773;
+    color: #5e6773;
+    border-radius: 100px;
+    background-color: transparent;
 }
 
 /* ----- NAVIGATION SLUT ----- */
@@ -322,55 +364,88 @@ header nav.show {
 
 #nyhedsbrev {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: #7ac1b1;
 
 }
 
 .nyhedsbrev_billede {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-image: url(img/brev.svg);
-    background-size: 100%;
-    max-height: auto;
-    background-repeat: no-repeat;
+    width: 40vw;
+    height: auto;
+    justify-self: center;
+}
+
+.nyhedsbrev_billede img {
+    width: 100%;
+    height: 100%;
 }
 
 .nyhedsbrev_tekst {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 6;
+    justify-self: center;
     text-align: center;
+    width: 60vw;
 }
+
+.tilmelding form {
+    width: 70vw;
+    padding: 0 15vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.tilmelding form #navn {
+    background-color: #5e6773;
+    padding: 8px;
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 100px;
+
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.tilmelding form #email {
+    background-color: #5e6773;
+    padding: 8px;
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 100px;
+
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.tilmelding form #tilmeld {
+    height: 25px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
 
 /* ----- OM ----- */
 
-#om {
-    margin: 50px 10;
-    padding: 1em;
-    background-color: #f5f1e6;
-    padding-top: em;
-    padding-bottom: 5em;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 1fr 3fr 1fr;
-    height: 160vh;
-    width: 100vw;
-    */
-}
+#om {}
 
 
 #om_tekst {
     height: 100%;
-    width: 100%;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    width: auto;
+    padding: 60px 25px 0 25px;
 }
 
 /*#video {
@@ -390,39 +465,28 @@ header nav.show {
 
 #video_om_container {
     height: auto;
-    float: left;
-    width: 100%;
+    width: 70vw;
 }
 
 .video_picture img {
-    width: 75%;
-    padding-left: 12%;
-    padding-bottom: 12%;
+    width: 100%;
+    padding: 15vh 15vw;
 }
 
 
 
 
 #bliv_en_del_af_os {
-    height: auto;
+    height: 50vh;
     background-color: #f5f1e6;
-    margin: 50px 10vw;
-    padding-bottom: 5em;
+    display: grid;
 
 }
 
-.bliv_en_del_af_os_tekst {}
+#bliv_en_del_af_os .bliv_en_del_af_os_tekst {
+    padding: 50px 10vw;
+    align-self: center;
 
-.bliv_en_del_af_os_tekst h2 {
-    color: black;
-}
-
-.bliv_en_del_af_os_tekst h3 {
-    color: black;
-}
-
-.bliv_en_del_af_os_tekst a {
-    color: black;
 }
 
 
@@ -535,8 +599,6 @@ header nav.show {
 
 /* ----- FOODAIDKATEGORISIDE SLUT ----- */
 
-/* ----- FOOTER ----- */
-
 /* ----- NYHEDER ----- */
 
 #article_nyhed {
@@ -588,6 +650,8 @@ header nav.show {
 }
 
 /* ----- NYHEDER SLUT ----- */
+
+/* ----- FOOTER ----- */
 
 footer {
     display: grid;

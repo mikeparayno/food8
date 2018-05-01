@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        <div id="overskrift">nyheder</div>
+
         <div class="menu">
             <button class="burger">
             <div class="bar1"></div>
@@ -19,7 +21,9 @@
         </button>
             <nav>
                 <div id="menu_open">
-                    <a href="index.html" id="home_logo"></a>
+                    <a href="index.html" id="home_logo">
+                        <img src="logo.png" alt="food8">
+                    </a>
                     <a href="nyheder.html" id="nav_nyheder">Nyheder</a>
                     <a href="spisesteder.html" id="nav_spisesteder">Spisesteder</a>
                     <a href="foodaidkategoriside.html" id="nav_foodaid">FoodAid</a>
@@ -164,6 +168,7 @@
 
         //DOM VISES
         document.addEventListener("DOMContentLoaded", hentJson);
+
     </script>
 
 </body>

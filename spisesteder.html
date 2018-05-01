@@ -10,6 +10,8 @@
 
 <body>
     <header>
+        <div id="overskrift">spisesteder</div>
+
         <div class="menu">
             <button class="burger">
             <div class="bar1"></div>
@@ -18,7 +20,9 @@
         </button>
             <nav>
                 <div id="menu_open">
-                    <a href="index.html" id="home_logo"></a>
+                    <a href="index.html" id="home_logo">
+                        <img src="logo.png" alt="food8">
+                    </a>
                     <a href="nyheder.html" id="nav_nyheder">Nyheder</a>
                     <a href="spisesteder.html" id="nav_spisesteder">Spisesteder</a>
                     <a href="foodaidkategoriside.html" id="nav_foodaid">FoodAid</a>
@@ -44,7 +48,7 @@
         <p>Find restauranterne her</p>
     </div>
 
-   <div id="map"></div>
+    <div id="map"></div>
 
     <section id="nyhedsbrev">
         <div class="nyhedsbrev_billede">
@@ -181,52 +185,48 @@
                 zoom: 12
             });
 
-         let marker = new google.maps.Marker({
-             position: fat_pike,
-             title: "The Fat Pike",
-             map: map
-         });
+            let marker = new google.maps.Marker({
+                position: fat_pike,
+                title: "The Fat Pike",
+                map: map
+            });
 
 
-        let marker1 = new google.maps.Marker({
-            position: noho,
-            title: "NOHO",
-            map: map
-        });
+            let marker1 = new google.maps.Marker({
+                position: noho,
+                title: "NOHO",
+                map: map
+            });
 
-        let marker2 = new google.maps.Marker({
-            position: fleisch,
-            title: "Fleisch",
-            map: map
-        });
+            let marker2 = new google.maps.Marker({
+                position: fleisch,
+                title: "Fleisch",
+                map: map
+            });
 
-        let marker3 = new google.maps.Marker({
-            position: metier,
-            title: "Metier",
-            map: map
-        });
+            let marker3 = new google.maps.Marker({
+                position: metier,
+                title: "Metier",
+                map: map
+            });
 
-        let marker4 = new google.maps.Marker({
-            position: spisehuset,
-            title: "spisehuset",
-            map: map
-        });
+            let marker4 = new google.maps.Marker({
+                position: spisehuset,
+                title: "spisehuset",
+                map: map
+            });
 
-        let marker5 = new google.maps.Marker({
-            position: un_mercato,
-            title: "Un Mercato",
-            map: map
-        });
+            let marker5 = new google.maps.Marker({
+                position: un_mercato,
+                title: "Un Mercato",
+                map: map
+            });
 
 
         }
-
-
-
-
     </script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdX9iybGMQb1ezX_Db90nLHWAg7AMwGE4&callback=initMap" async defer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdX9iybGMQb1ezX_Db90nLHWAg7AMwGE4&callback=initMap" async defer>
     </script>
 
 </body>
