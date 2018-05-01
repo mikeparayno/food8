@@ -413,6 +413,18 @@ header nav.show {
 
 /* ----- FOODAIDKATEGORISIDE ----- */
 
+#food_aid_billede_logo {
+    width: 70vw;
+    background-color: #e9cfd0;
+    padding: 15vw 15vw 0 15vw;
+}
+
+#food_aid_billede_logo img {
+    width: 100%;
+    background-color: #e9cfd0;
+}
+
+
 #food_aid_kategoriside {
     display: grid;
     height: 100vh;
@@ -424,9 +436,10 @@ header nav.show {
     justify-items: center;
 }
 
+
+
 #food_aid_tekst {
     height: 90%;
-    margin-top: 10%;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
