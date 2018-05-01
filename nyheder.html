@@ -30,8 +30,8 @@
     </header>
 
     <section id="filtrering">
-        <button class="oekologi">Økologi</button>
-        <button class="biodynamik">Biodynamik</button>
+        <button class="tags">Økologi</button>
+        <button class="tags">Biodynamik</button>
     </section>
 
 
@@ -108,39 +108,42 @@
             knap.addEventListener("click", (e) => {
                 filtertype = e.target.className;
                 filternavn = e.target.textContent;
+
+                //console.log("knapper", filtertype);
                 lavFiltrering();
-                console.log("knapper", filtertype);
             });
 
         });
 
 
 
-        function lavFiltrering() {
-            //document.querySelector("#overskrift").textContent = filternavn;
-            if (filternavn != "Alle") {
-                nyheder = nyheder.filter(nyhed => nyhed.acf.tags.contains == filternavn);
-                //console.log(nyheder.acf.tags);
-            }
-            visNyheder();
-        }
 
         //NYHEDER
-
-
         async function hentJson() {
             let dataJson = await fetch(jSonUrl);
             nyheder = await dataJson.json();
             //viser arrayet efter json er hentet ind
-            //console.log(nyheder);
+            console.log("før", nyheder);
             //visNyheder();
+            //visNyheder();
+            lavFiltrering();
+        }
+
+        function lavFiltrering() {
+            //document.querySelector("#overskrift").textContent = filternavn;
+            console.log(filtertype, filternavn);
+            if (filternavn != "Alle") {
+                nyheder = nyheder.filter(nyhed => nyhed.acf[filtertype] == filternavn);
+                console.log(nyheder);
+            }
+            console.log("efter", nyheder);
             visNyheder();
         }
 
         function visNyheder() {
             nyheder.forEach(nyhed => {
                 //console.log(nyhed);
-                console.log(nyhed.acf.tags);
+                //xconsole.log(nyhed.acf.tags);
                 let klon = template.cloneNode(true).content;
                 //console.log(klon);
                 klon.querySelector("[data-header]").textContent = nyhed.title.rendered;
