@@ -337,7 +337,7 @@ header nav.show {
 /* ----- OM ----- */
 
 #om {
-    margin: 2.7em;
+    margin: 50px 10vw;
     padding: 1em;
     background-color: #f5f1e6;
     padding-top: em;
@@ -391,7 +391,7 @@ header nav.show {
 #bliv_en_del_af_os {
     height: auto;
     background-color: #f5f1e6;
-    margin: 2.7em;
+    margin: 50px 10vw;
     padding-bottom: 5em;
 
 }
