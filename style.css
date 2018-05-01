@@ -15,15 +15,18 @@ h2 {
     font-size: 1.3em;
     margin-bottom: 20px;
     font-family: 'Open Sans', sans-serif;
+    color: #5e6773;
 }
 
 h3 {
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
+    color: #5e6773;
 }
 
 p {
     font-size: 0.9em;
+    color: #5e6773;
 }
 
 a {
@@ -32,7 +35,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 5px;
     text-decoration: none;
-    color: black;
+    color: #5e6773;
 }
 
 /* ----- NAVIGATION ----- */
@@ -75,6 +78,7 @@ header nav.show {
     justify-content: center;
     align-content: center;
     z-index: 3;
+
 }
 
 #menu_open a {
@@ -125,6 +129,37 @@ header nav.show {
     background-color: #5e6773;
     margin: 4px 0;
     transition: 0.4s;
+}
+
+/* OVERSKRIFT MENU */
+
+#overskrift {
+    font-size: 1.3em;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #5e6773;
+    padding-left: 25px;
+    padding-top: 16px;
+    position: absolute;
+}
+
+/* FILTRERING KNAPPER */
+
+section#filtrering {
+    padding-left: 20px;
+    padding-top: 60px;
+
+}
+
+section#filtrering button {
+    height: 30px;
+    width: auto;
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-color: #5e6773;
+    color: #5e6773;
+    border-radius: 100px;
+    background-color: transparent;
 }
 
 /* ----- NAVIGATION SLUT ----- */
