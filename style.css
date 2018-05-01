@@ -337,12 +337,19 @@ header nav.show {
 /* ----- OM ----- */
 
 #om {
-    display: grid;
+    margin: 2.7em;
+    padding: 1em;
+    background-color: white;
+    padding-top: em;
+    padding-bottom: 5em;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr 1fr 3fr 1fr;
     height: 160vh;
     width: 100vw;
+    */
 }
+
 
 #om_tekst {
     height: 100%;
@@ -382,30 +389,25 @@ header nav.show {
 
 
 #bliv_en_del_af_os {
-    height: 100vh;
-    width: 100vw;
+    height: auto;
     background-color: #f5f1e6;
-    ;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2.7em;
+    padding-bottom: 5em;
+
 }
 
-.bliv_en_del_af_os_tekst {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
+.bliv_en_del_af_os_tekst {}
 
 .bliv_en_del_af_os_tekst h2 {
-    color: dimgrey;
+    color: black;
 }
 
 .bliv_en_del_af_os_tekst h3 {
-    color: dimgrey;
+    color: black;
 }
 
 .bliv_en_del_af_os_tekst a {
-    color: dimgrey;
+    color: black;
 }
 
 
