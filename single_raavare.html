@@ -108,15 +108,15 @@
     </section>
 
     <footer>
-       <div id="sociale_medier">
-          <div id="instagram">
-            <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
-        </div>
-        <div id="facebook">
-            <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
-        </div>
+        <div id="sociale_medier">
+            <div id="instagram">
+                <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
+            </div>
+            <div id="facebook">
+                <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
+            </div>
 
-       </div>
+        </div>
         <div id="kontakt">
             <h3>Kontakt</h3>
         </div>
@@ -157,8 +157,8 @@
         function visRaavare() {
             document.querySelector("[data-image]").src = raavare.acf.billede.url;
             document.querySelector("[data-image]").alt = "billede af" + raavare.acf.billede.title;
-            //document.querySelector("[data-logo]").src = raavare.acf.billede.url;
-            //document.querySelector("[data-logo]").alt = "billede af" + raavare.acf.billede.title;
+            document.querySelector("[data-logo]").src = raavare.acf.logo.url;
+            document.querySelector("[data-logo]").alt = "billede af" + raavare.acf.logo.title;
 
             document.querySelector("[data-overskrift]").textContent = raavare.acf.overskrift;
             console.log("overskrift");

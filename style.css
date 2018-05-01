@@ -284,6 +284,7 @@ header nav.show {
     grid-row: 1 / 2;
 }
 
+/*
 
 .overlay {
     opacity: 0;
@@ -293,7 +294,7 @@ header nav.show {
     height: 350px;
     margin: 0 auto;
 }
-
+*/
 
 .food8_billede .bagg_img img,
 .foodaid_billede .bagg_img img {
