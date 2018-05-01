@@ -986,13 +986,13 @@ single_raavarer #info p {
 /*------- STYLING AF FB OG IG IKONER-------*/
 
 .fa {
-    padding: 10px;
-    font-size: 5em;
-    width: 30px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
-    border-radius: 1000px;
+    border-radius: 50px;
+    letter-spacing: normal;
 }
+
 
 .fa:hover {
     opacity: 0.7;
@@ -1006,4 +1006,13 @@ single_raavarer #info p {
 .fa-instagram {
     background-color: beige;
     color: cornflowerblue;
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+    font-size: 2em;
+}
+
+.fa-instagram:before {
+    font-size: 2em;
 }
