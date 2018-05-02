@@ -716,7 +716,7 @@ section#filtrering button {
 
 /* ----- FOODAIDKATEGORISIDE SLUT ----- */
 
-/* ----- NYHEDER ----- */
+/* ----- NYHEDER, GUIDES ----- */
 
 #article_nyhed {
     width: 80vw;
@@ -725,8 +725,13 @@ section#filtrering button {
     background-color: #f5f1e6;
 }
 
+
 #guides_baggrund {
     background-color: #e9cfd0;
+}
+
+#guides_baggrund header {
+    height: 50px;
 }
 
 #article_guide {
