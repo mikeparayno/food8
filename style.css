@@ -808,7 +808,7 @@ footer h3 {
 #article_barer .billede_barer,
 #article_raavarer .billede_raavarer {
     width: 100%;
-    height: 150px;
+    height: 60vw;
     overflow: hidden;
     display: grid;
     justify-content: center;
@@ -829,7 +829,7 @@ footer h3 {
     height: auto;
     position: absolute;
     z-index: 1;
-    margin: 25px 37.5vw;
+    margin: 17.5vw 37.5vw;
 }
 
 #text_box {
