@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -201,6 +202,16 @@
             });
 
 
+            let infowindow = new google.maps.InfoWindow({
+                content: "<h1> The Fat Pike </h2> <br> <h2> Åbningstider </h2> <p> Mandag: 17.30-23.00 <br> Tirsdag: 17.30-23.00 <br> Onsdag: 16.30-23.00 <br> Torsdag: 16.30-23.00 <br> Fredag: 16.30 - 23.00 <br> Lørdag: 17.30-23.00 <br> Søndag: lukket <br><br> kontakt: info@thefatpike.dk </p>"
+            });
+
+            marker.addListener("click", () => {
+                infowindow.open(map, marker);
+            });
+
+
+
 
             let icon_noho = {
                 url: "img/logoer-assets/noho.jpg",
@@ -214,6 +225,17 @@
                 icon: icon_noho,
                 map: map
             });
+
+
+            let infowindow1 = new google.maps.InfoWindow({
+                content: "<h1> NOHO </h2> <br> <h2> Åbningstider: </h2> <p> Mandag: 08.30-24.00 <br> Tirsdag: 08.30-24.00 <br> Onsdag: 08.30-24.00 <br> Torsdag: 08.30-02.00 <br> Fredag: 08.30 - 03.00 <br> Lørdag: 10.00-03.00 <br> Søndag: 10.00-16.00 <br><br> kontakt: info@noho.bar</p>"
+            });
+
+            marker1.addListener("click", () => {
+                infowindow1.open(map, marker1);
+            });
+
+
 
 
 
@@ -231,6 +253,15 @@
             });
 
 
+            let infowindow2 = new google.maps.InfoWindow({
+                content: "<h1> Fleish </h2> <br> <h2> Åbningstider: </h2> <p> Mandag: 08.30-24.00 <br> Tirsdag: 08.30-24.00 <br> Onsdag: 08.30-24.00 <br> Torsdag: 08.30-02.00 <br> Fredag: 08.30 - 03.00 <br> Lørdag: 10.00-03.00 <br> Søndag: 10.00-16.00 <br><br> kontakt: info@fleisch.dk</p>"
+            });
+
+            marker2.addListener("click", () => {
+                infowindow2.open(map, marker2);
+            });
+
+
             let icon_metier = {
                 url: "img/logoer-assets/metier.jpg",
                 scaledSize: new google.maps.Size(50, 50)
@@ -242,6 +273,15 @@
                 title: "Metier",
                 icon: icon_metier,
                 map: map
+            });
+
+
+            let infowindow3 = new google.maps.InfoWindow({
+                content: "<h1> Metier </h2> <br> <h2> Åbningstider: </h2> <p> Mandag: 08.30-24.00 <br> Tirsdag: 08.30-24.00 <br> Onsdag: 08.30-24.00 <br> Torsdag: 08.30-02.00 <br> Fredag: 08.30 - 03.00 <br> Lørdag: 10.00-03.00 <br> Søndag: 10.00-16.00 <br><br> kontakt: mail@restaurantmetier.dk</p>"
+            });
+
+            marker3.addListener("click", () => {
+                infowindow3.open(map, marker3);
             });
 
 
@@ -259,6 +299,14 @@
             });
 
 
+            let infowindow4 = new google.maps.InfoWindow({
+                content: "<h1> Spisehuset </h2> <br> <h2> Åbningstider: </h2> <p> Mandag: 08.30-24.00 <br> Tirsdag: 08.30-24.00 <br> Onsdag: 08.30-24.00 <br> Torsdag: 08.30-02.00 <br> Fredag: 08.30 - 03.00 <br> Lørdag: 10.00-03.00 <br> Søndag: 10.00-16.00 <br><br> kontakt: info@spisehuset.dk</p>"
+            });
+
+            marker4.addListener("click", () => {
+                infowindow4.open(map, marker4);
+            });
+
 
             let icon_mercato = {
                 url: "img/logoer-assets/unmercato.jpg",
@@ -274,6 +322,15 @@
             });
 
 
+            let infowindow5 = new google.maps.InfoWindow({
+                content: "<h1> Un Mercato </h2> <br> <h2> Åbningstider: </h2> <p> Mandag: 08.30-24.00 <br> Tirsdag: 08.30-24.00 <br> Onsdag: 08.30-24.00 <br> Torsdag: 08.30-02.00 <br> Fredag: 08.30 - 03.00 <br> Lørdag: 10.00-03.00 <br> Søndag: 10.00-16.00 <br><br> kontakt: info@unmercato.dk</p>"
+            });
+
+            marker5.addListener("click", () => {
+                infowindow5.open(map, marker5);
+            });
+
+
         }
     </script>
 
@@ -281,4 +338,5 @@
     </script>
 
 </body>
+
 </html>
