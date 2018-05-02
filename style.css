@@ -156,6 +156,12 @@ section#filtrering {
     padding-left: 20px;
     padding-top: 60px;
 
+    width: 100vw;
+    height: auto;
+    float: left;
+    overflow-y: auto;
+    height: 60px;
+
 }
 
 section#filtrering button {
