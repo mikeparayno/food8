@@ -156,6 +156,11 @@ section#filtrering {
     padding-left: 20px;
     padding-top: 60px;
 
+    height: 30px;
+    width: 200px;
+    overflow-x: scroll;
+
+
 }
 
 section#filtrering button {
@@ -167,6 +172,7 @@ section#filtrering button {
     color: #5e6773;
     border-radius: 100px;
     background-color: transparent;
+
 }
 
 /* ----- NAVIGATION SLUT ----- */
@@ -293,6 +299,8 @@ section#filtrering button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+
+
 }
 
 #food8 .food8_billede .logo1,
@@ -305,6 +313,12 @@ section#filtrering button {
     align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.81);
+
+
+
+
 
 }
 
@@ -312,6 +326,8 @@ section#filtrering button {
 #foodaid .foodaid_billede .logo2 img {
     width: 100%;
     height: auto;
+
+
 }
 
 #food8 .food8_billede .bagg_img,
@@ -324,6 +340,8 @@ section#filtrering button {
     padding: 50px 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+
 }
 
 /*
@@ -342,6 +360,7 @@ section#filtrering button {
 .foodaid_billede .bagg_img img {
     width: auto;
     height: 100%;
+
 }
 
 
@@ -364,9 +383,9 @@ section#filtrering button {
 
 #nyhedsbrev {
     display: grid;
-    height: auto;
     width: 100vw;
     background-color: #7ac1b1;
+    padding: 5vh 0;
 
 }
 
@@ -374,6 +393,7 @@ section#filtrering button {
     width: 40vw;
     height: auto;
     justify-self: center;
+    padding: 5vh 0;
 }
 
 .nyhedsbrev_billede img {
@@ -385,11 +405,12 @@ section#filtrering button {
     justify-self: center;
     text-align: center;
     width: 60vw;
+    padding: 5vh 0;
 }
 
 .tilmelding form {
     width: 70vw;
-    padding: 0 15vw;
+    padding: 5vh 15vw;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -433,6 +454,10 @@ section#filtrering button {
 
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+
+::placeholder {
+    color: darkgrey;
 }
 
 
