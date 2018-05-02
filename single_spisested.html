@@ -110,15 +110,15 @@
     </section>
 
     <footer>
-       <div id="sociale_medier">
-          <div id="instagram">
-            <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
-        </div>
-        <div id="facebook">
-            <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
-        </div>
+        <div id="sociale_medier">
+            <div id="instagram">
+                <a href="https://www.instagram.com/food8dk/" class="fa fa-instagram"></a>
+            </div>
+            <div id="facebook">
+                <a href="https://www.facebook.com/food8dk/" class="fa fa-facebook"></a>
+            </div>
 
-       </div>
+        </div>
         <div id="kontakt">
             <h3>Kontakt</h3>
         </div>
@@ -159,8 +159,8 @@
         function visSpisested() {
             document.querySelector("[data-image]").src = spisested.acf.billede.url;
             document.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
-            //document.querySelector("[data-logo]").src = spisested.acf.billede.url;
-            //document.querySelector("[data-logo]").alt = "billede af" + spisested.acf.billede.title;
+            document.querySelector("[data-logo]").src = spisested.acf.logo.url;
+            document.querySelector("[data-logo]").alt = "billede af" + spisested.acf.logo.title;
 
             document.querySelector("[data-overskrift]").textContent = spisested.acf.overskrift;
             console.log("overskrift");
