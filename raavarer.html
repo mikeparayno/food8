@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id="baggrund_raavarer">
     <header>
         <div id="overskrift">råvarer</div>
 
@@ -40,7 +40,7 @@
             <p>Her kan du se de forskellige forretninger der tilbyder råvarer, som er tilknyttet Food8</p>
         </div>
 
-        <section id="display">
+        <section id="display_raavarer">
         </section>
     </section>
 
@@ -107,7 +107,7 @@
         //RÅVARER
         let jSonUrl = "http://malouvincents.dk/kea/07-cms/food8/wordpress/wp-json/wp/v2/raavarer";
         let raavarer = [];
-        let display = document.querySelector("#display");
+        let display = document.querySelector("#display_raavarer");
         let template = document.querySelector("#temp_raavarer");
 
         document.addEventListener("DOMContentLoaded", hentJson);
@@ -142,7 +142,6 @@
         }
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
-
     </script>
 </body>
 

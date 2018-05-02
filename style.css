@@ -851,6 +851,10 @@ footer h3 {
 
 /*------- SPISESTEDER, BARER, RÅVARER -------*/
 
+#baggrund_raavarer {
+    background-color: #e9cfd0;
+}
+
 #spisesteder,
 #barer,
 #raavarer {
