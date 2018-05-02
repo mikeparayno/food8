@@ -791,7 +791,16 @@ footer h3 {
 #article_raavarer .billede_raavarer img {
     width: 100%;
     height: auto;
+}
 
+#article_spisesteder .billede_spisesteder .logo,
+#article_barer .billede_barer .logo,
+#article_raavarer .billede_raavarer .logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    margin: 25px 150px;
 }
 
 #text_box {
