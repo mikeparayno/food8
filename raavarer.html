@@ -94,7 +94,7 @@
 
     <template id="temp_raavarer">
             <article id="article_raavarer" class="linktosingle">
-                <h2 data-header></h2>
+                <!-- <h2 data-header></h2> -->
                 <div class="billede_raavarer">
                     <img data-image src="" alt="">
                     <img class="logo" data-logo src="" alt="">
@@ -123,7 +123,7 @@
             raavarer.forEach(raavare => {
                 let klon = template.cloneNode(true).content;
                 console.log(klon);
-                klon.querySelector("[data-header]").textContent = raavare.title.rendered;
+                //klon.querySelector("[data-header]").textContent = raavare.title.rendered;
                 klon.querySelector("[data-image]").src = raavare.acf.billede.url;
                 klon.querySelector("[data-image]").alt = "billede af" + raavare.acf.billede.title;
                 klon.querySelector("[data-logo]").src = raavare.acf.logo.url;
@@ -141,6 +141,7 @@
         }
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
+
     </script>
 </body>
 
