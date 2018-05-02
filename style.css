@@ -293,6 +293,8 @@ section#filtrering button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+
+
 }
 
 #food8 .food8_billede .logo1,
@@ -305,6 +307,12 @@ section#filtrering button {
     align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.81);
+
+
+
+
 
 }
 
@@ -312,6 +320,8 @@ section#filtrering button {
 #foodaid .foodaid_billede .logo2 img {
     width: 100%;
     height: auto;
+
+
 }
 
 #food8 .food8_billede .bagg_img,
@@ -324,6 +334,8 @@ section#filtrering button {
     padding: 50px 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+
 }
 
 /*
@@ -342,6 +354,7 @@ section#filtrering button {
 .foodaid_billede .bagg_img img {
     width: auto;
     height: 100%;
+
 }
 
 
