@@ -43,12 +43,12 @@ section#forside_nyhedsbrev {
     position: absolute;
     z-index: 3;
     height: 120px;
-    width: 80px;
+    width: 70vw;
     background-color: #7ac1b1;
 
     margin-left: 25px;
     border-radius: 15px;
-    display: grid;
+
 
     animation-name: nyhedsbrev_ind;
     animation-duration: 2s;
@@ -69,49 +69,43 @@ section#forside_nyhedsbrev {
 }
 
 section#forside_nyhedsbrev a {
-    height: auto;
-    width: 60%;
-    padding-top: 10%;
-    justify-self: center;
-    align-self: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-decoration: none;
 }
 
-section#forside_nyhedsbrev a img {
+section#forside_nyhedsbrev a #brev {
+    height: auto;
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+    padding-top: 20px;
+    padding-left: 25px;
+    grid-column: 1 / 2;
+}
+
+
+section#forside_nyhedsbrev a #brev img {
     height: 100%;
     width: 100%;
 }
 
 
-#forside_nyhedsbrev_tekst {
-    position: absolute;
-    z-index: 3;
-    height: 80px;
-    border-radius: 15px;
-    display: grid;
-
-    animation-name: tekst_ind;
-    animation-duration: 0.5s;
-    animation-delay: 2.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in;
-}
-
-@keyframes tekst_ind {
-    from {
-        left: 100px;
-        opacity: 0;
-    }
-
-    to {
-        left: 120px;
-        opacity: 1;
-    }
-}
-
-#forside_nyhedsbrev_tekst p {
+section#forside_nyhedsbrev a #tekst {
+    height: auto;
+    width: 70%;
+    justify-self: center;
     align-self: center;
+
+    padding-top: 18px;
+    grid-column: 2 / 3;
+}
+
+section#forside_nyhedsbrev a #tekst p {
     font-size: 1em;
+
 }
 
 
@@ -354,6 +348,41 @@ section#filtrering button {
     font-size: 3em;
     color: #5e6773;
 
+}
+
+#pil {
+    width: 12vw;
+    position: absolute;
+    z-index: 3;
+    margin: 0 44vw;
+    top: 92vh;
+
+    animation-name: pil_opned;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes pil_opned {
+    0 {
+        top: 92vh;
+    }
+
+    50% {
+        top: 94vh;
+    }
+
+    100% {
+        top: 92vh;
+    }
+
+}
+
+#pil img {
+    width: 100%;
+    height: 100%;
 }
 
 /* splash slut */
