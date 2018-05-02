@@ -363,9 +363,9 @@ section#filtrering button {
 
 #nyhedsbrev {
     display: grid;
-    height: auto;
     width: 100vw;
     background-color: #7ac1b1;
+    padding: 5vh 0;
 
 }
 
@@ -373,6 +373,7 @@ section#filtrering button {
     width: 40vw;
     height: auto;
     justify-self: center;
+    padding: 5vh 0;
 }
 
 .nyhedsbrev_billede img {
@@ -384,11 +385,12 @@ section#filtrering button {
     justify-self: center;
     text-align: center;
     width: 60vw;
+    padding: 5vh 0;
 }
 
 .tilmelding form {
     width: 70vw;
-    padding: 0 15vw;
+    padding: 5vh 15vw;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -432,6 +434,10 @@ section#filtrering button {
 
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+}
+
+::placeholder {
+    color: darkgrey;
 }
 
 
