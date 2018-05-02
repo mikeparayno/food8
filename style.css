@@ -655,12 +655,16 @@ section#filtrering button {
     height: 100%;
     width: 100%;
     display: grid;
+
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #food_aid_raavarer a p {
     align-self: center;
     justify-self: center;
     color: #5e6773;
+
 }
 
 #food_aid_barer {
@@ -675,6 +679,9 @@ section#filtrering button {
     height: 100%;
     width: 100%;
     display: grid;
+
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #food_aid_barer a p {
@@ -695,6 +702,9 @@ section#filtrering button {
     height: 100%;
     width: 100%;
     display: grid;
+
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #food_aid_guides a p {
