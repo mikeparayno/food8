@@ -182,43 +182,94 @@
             map = new
             google.maps.Map(document.querySelector("#map"), {
                 center: un_mercato,
-                zoom: 12
+                zoom: 12.5
             });
+
+
+            let icon_fatpike = {
+                url: "img/logoer-assets/fatpike.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
+
+
 
             let marker = new google.maps.Marker({
                 position: fat_pike,
                 title: "The Fat Pike",
+                icon: icon_fatpike,
                 map: map
             });
+
+
+
+            let icon_noho = {
+                url: "img/logoer-assets/noho.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
 
 
             let marker1 = new google.maps.Marker({
                 position: noho,
                 title: "NOHO",
+                icon: icon_noho,
                 map: map
             });
+
+
+
+            let icon_fleisch = {
+                url: "img/logoer-assets/fleish.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
+
 
             let marker2 = new google.maps.Marker({
                 position: fleisch,
                 title: "Fleisch",
+                icon: icon_fleisch,
                 map: map
             });
+
+
+            let icon_metier = {
+                url: "img/logoer-assets/metier.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
+
 
             let marker3 = new google.maps.Marker({
                 position: metier,
                 title: "Metier",
+                icon: icon_metier,
                 map: map
             });
+
+
+            let icon_spisehuset = {
+                url: "img/logoer-assets/spisehuset.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
+
 
             let marker4 = new google.maps.Marker({
                 position: spisehuset,
                 title: "spisehuset",
+                icon: icon_spisehuset,
                 map: map
             });
+
+
+
+            let icon_mercato = {
+                url: "img/logoer-assets/unmercato.jpg",
+                scaledSize: new google.maps.Size(50, 50)
+            };
+
 
             let marker5 = new google.maps.Marker({
                 position: un_mercato,
                 title: "Un Mercato",
+                icon: icon_mercato,
                 map: map
             });
 
