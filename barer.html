@@ -91,6 +91,7 @@
                 <h2 data-header></h2>
                 <div class="billede_barer">
                     <img data-image src="" alt="">
+                    <img class="logo" data-logo src="" alt="">
                 </div>
             </article>
         </template>
@@ -119,6 +120,8 @@
                 klon.querySelector("[data-header]").textContent = bar.title.rendered;
                 klon.querySelector("[data-image]").src = bar.acf.billede.url;
                 klon.querySelector("[data-image]").alt = "billede af" + bar.acf.billede.title;
+                klon.querySelector("[data-logo]").src = bar.acf.logo.url;
+                klon.querySelector("[data-logo]").alt = "billede af" + bar.acf.logo.title;
                 klon.querySelector(".linktosingle").addEventListener("click", () => {
                     location.href = "single_bar.html?id=" + bar.id;
                 });
@@ -132,7 +135,6 @@
         }
         document.querySelector(".burger").addEventListener("click", toggleMenu);
         document.querySelector("nav").addEventListener("click", toggleMenu);
-
     </script>
 </body>
 

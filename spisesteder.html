@@ -99,6 +99,8 @@
                 <h2 data-header></h2>
                 <div class="billede_spisesteder">
                     <img data-image src="" alt="">
+                    <img class="logo" data-logo src="" alt="">
+
                 </div>
             </article>
         </template>
@@ -127,8 +129,9 @@
                 klon.querySelector("[data-header]").textContent = spisested.title.rendered;
                 klon.querySelector("[data-image]").src = spisested.acf.billede.url;
                 klon.querySelector("[data-image]").alt = "billede af" + spisested.acf.billede.title;
-                //console.log(klon.querySelector("[data-image]").alt);
-                //klon.querySelector("[data-description]").innerHTML = nyhed.content.rendered;
+
+                klon.querySelector("[data-logo]").src = spisested.acf.logo.url;
+                klon.querySelector("[data-logo]").alt = "billede af" + spisested.acf.logo.title;
                 klon.querySelector(".linktosingle").addEventListener("click", () => {
                     location.href = "single_spisested.html?id=" + spisested.id;
                 });

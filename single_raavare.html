@@ -35,7 +35,6 @@
         <article id="single_raavarer">
             <div id="info">
                 <img data-image src="" alt="">
-                <img data-logo src="" alt="">
 
                 <nav id="single_nav">
                     <a href="#menu">Menu</a>
@@ -159,8 +158,7 @@
         function visRaavare() {
             document.querySelector("[data-image]").src = raavare.acf.billede.url;
             document.querySelector("[data-image]").alt = "billede af" + raavare.acf.billede.title;
-            document.querySelector("[data-logo]").src = raavare.acf.logo.url;
-            document.querySelector("[data-logo]").alt = "billede af" + raavare.acf.logo.title;
+
 
             document.querySelector("[data-overskrift]").textContent = raavare.acf.overskrift;
             console.log("overskrift");
