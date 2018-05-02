@@ -156,11 +156,10 @@ section#filtrering {
     padding-left: 20px;
     padding-top: 60px;
 
-    width: 100vw;
-    height: auto;
-    float: left;
-    overflow-y: auto;
-    height: 60px;
+    height: 30px;
+    width: 200px;
+    overflow-x: scroll;
+
 
 }
 
@@ -173,6 +172,7 @@ section#filtrering button {
     color: #5e6773;
     border-radius: 100px;
     background-color: transparent;
+
 }
 
 /* ----- NAVIGATION SLUT ----- */
