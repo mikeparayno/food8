@@ -851,9 +851,11 @@ footer h3 {
 
 /*------- SPISESTEDER, BARER, RÅVARER -------*/
 
-#baggrund_raavarer {
+#baggrund_raavarer,
+#baggrund_barer {
     background-color: #e9cfd0;
 }
+
 
 #spisesteder,
 #barer,
@@ -949,6 +951,12 @@ footer h3 {
 
 #display {}
 
+
+#single_baggrund_raavare,
+#single_baggrund_bar {
+    background-color: #e9cfd0;
+}
+
 #single_spisesteder,
 #single_barer,
 #single_raavarer {
@@ -972,9 +980,16 @@ footer h3 {
 #single_barer #info #single_nav,
 #single_raavarer #info #single_nav {
     width: 90%;
-    padding: 0 5% 20px 5%;
+    padding: 20px 5% 20px 5%;
     display: grid;
     grid-gap: 10px;
+}
+
+#single_spisesteder #info #single_nav a,
+#single_barer #info #single_nav a,
+single_raavarer #info #single_nav a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 #single_spisesteder #info img,
@@ -997,6 +1012,7 @@ single_raavarer #info p {
     width: 90%;
     padding: 0 5%;
 }
+
 
 /* MENU */
 
